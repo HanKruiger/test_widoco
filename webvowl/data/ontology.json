@@ -1,0 +1,2999 @@
+{
+  "_comment" : "Created with OWL2VOWL (version 0.3.5), http://vowl.visualdataweb.org",
+  "header" : {
+    "languages" : [ "en", "undefined" ],
+    "baseIris" : [ "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf", "http://www.w3.org/1999/02/22-rdf-syntax-ns", "http://geographicknowledge.de/vocab/CoreConceptData.rdf", "http://www.w3.org/2002/07/owl", "http://www.w3.org/2000/01/rdf-schema", "http://www.w3.org/2001/XMLSchema", "http://geographicknowledge.de/vocab/AnalysisData.rdf", "http://geographicknowledge.de/vocab/GISConcepts.rdf" ],
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "comments" : {
+      "en" : "This ontology pattern describes geodata types representing core concepts of spatial information (Kuhn 2012) we well as further semantic attribute distinctions relevant for geocomputation and geo-analysis."
+    },
+    "other" : {
+      "seeAlso" : [ {
+        "identifier" : "seeAlso",
+        "language" : "undefined",
+        "value" : "http://spatial.ucsb.edu/core-concepts-of-spatial-information/",
+        "type" : "iri"
+      } ]
+    }
+  },
+  "namespace" : [ ],
+  "class" : [ {
+    "id" : "8",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "37",
+    "type" : "owl:Class"
+  }, {
+    "id" : "41",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "45",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "48",
+    "type" : "owl:Class"
+  }, {
+    "id" : "52",
+    "type" : "owl:Class"
+  }, {
+    "id" : "62",
+    "type" : "owl:Class"
+  }, {
+    "id" : "67",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "69",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "70",
+    "type" : "owl:Class"
+  }, {
+    "id" : "15",
+    "type" : "owl:Class"
+  }, {
+    "id" : "74",
+    "type" : "owl:Class"
+  }, {
+    "id" : "79",
+    "type" : "owl:Class"
+  }, {
+    "id" : "81",
+    "type" : "owl:Class"
+  }, {
+    "id" : "83",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "84",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "50",
+    "type" : "owl:Class"
+  }, {
+    "id" : "86",
+    "type" : "owl:Class"
+  }, {
+    "id" : "87",
+    "type" : "owl:Class"
+  }, {
+    "id" : "42",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "22",
+    "type" : "owl:Class"
+  }, {
+    "id" : "89",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "80",
+    "type" : "owl:Class"
+  }, {
+    "id" : "73",
+    "type" : "owl:Class"
+  }, {
+    "id" : "72",
+    "type" : "owl:Class"
+  }, {
+    "id" : "103",
+    "type" : "owl:Class"
+  }, {
+    "id" : "43",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "96",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "104",
+    "type" : "owl:unionOf"
+  }, {
+    "id" : "105",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "55",
+    "type" : "owl:Class"
+  }, {
+    "id" : "34",
+    "type" : "owl:Class"
+  }, {
+    "id" : "51",
+    "type" : "owl:Class"
+  }, {
+    "id" : "76",
+    "type" : "owl:Class"
+  }, {
+    "id" : "108",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "110",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "113",
+    "type" : "owl:Class"
+  }, {
+    "id" : "93",
+    "type" : "owl:Class"
+  }, {
+    "id" : "68",
+    "type" : "owl:Class"
+  }, {
+    "id" : "46",
+    "type" : "owl:Class"
+  }, {
+    "id" : "118",
+    "type" : "owl:Class"
+  }, {
+    "id" : "119",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "56",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "10",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "1",
+    "type" : "owl:Class"
+  }, {
+    "id" : "120",
+    "type" : "owl:Class"
+  }, {
+    "id" : "30",
+    "type" : "owl:Class"
+  }, {
+    "id" : "9",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "16",
+    "type" : "owl:Class"
+  }, {
+    "id" : "19",
+    "type" : "owl:Class"
+  }, {
+    "id" : "11",
+    "type" : "owl:Class"
+  }, {
+    "id" : "75",
+    "type" : "owl:Class"
+  }, {
+    "id" : "53",
+    "type" : "owl:Class"
+  }, {
+    "id" : "18",
+    "type" : "owl:Class"
+  }, {
+    "id" : "128",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "13",
+    "type" : "owl:Class"
+  }, {
+    "id" : "85",
+    "type" : "owl:Class"
+  }, {
+    "id" : "61",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "6",
+    "type" : "owl:Thing"
+  }, {
+    "id" : "109",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "126",
+    "type" : "owl:Class"
+  }, {
+    "id" : "141",
+    "type" : "owl:Class"
+  }, {
+    "id" : "122",
+    "type" : "owl:Class"
+  }, {
+    "id" : "106",
+    "type" : "owl:Class"
+  }, {
+    "id" : "142",
+    "type" : "owl:Class"
+  }, {
+    "id" : "91",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "82",
+    "type" : "owl:Class"
+  }, {
+    "id" : "4",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "111",
+    "type" : "owl:Class"
+  }, {
+    "id" : "144",
+    "type" : "owl:Class"
+  }, {
+    "id" : "66",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "155",
+    "type" : "owl:Class"
+  }, {
+    "id" : "71",
+    "type" : "owl:Class"
+  }, {
+    "id" : "29",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "170",
+    "type" : "owl:Class"
+  }, {
+    "id" : "171",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "100",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "32",
+    "type" : "owl:equivalentClass"
+  }, {
+    "id" : "127",
+    "type" : "owl:Class"
+  }, {
+    "id" : "97",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "185",
+    "type" : "owl:Class"
+  }, {
+    "id" : "107",
+    "type" : "owl:Class"
+  }, {
+    "id" : "40",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "115",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "90",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "64",
+    "type" : "owl:Class"
+  }, {
+    "id" : "58",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "47",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "98",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "146",
+    "type" : "owl:Class"
+  }, {
+    "id" : "44",
+    "type" : "owl:Class"
+  }, {
+    "id" : "88",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "59",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "36",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "125",
+    "type" : "owl:Class"
+  }, {
+    "id" : "25",
+    "type" : "owl:Class"
+  }, {
+    "id" : "99",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "23",
+    "type" : "owl:Class"
+  }, {
+    "id" : "231",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "137",
+    "type" : "owl:Class"
+  }, {
+    "id" : "134",
+    "type" : "owl:intersectionOf"
+  }, {
+    "id" : "27",
+    "type" : "owl:Class"
+  }, {
+    "id" : "2",
+    "type" : "owl:Class"
+  } ],
+  "classAttribute" : [ {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectLine"
+    },
+    "intersection" : [ "11" ],
+    "comment" : {
+      "en" : "An attribute of an object line dataset"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "8",
+    "superClasses" : [ "9", "10" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#TemporalData",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "37"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointMeasures"
+    },
+    "intersection" : [ "44" ],
+    "comment" : {
+      "en" : "Point measures are point-like representations of fields. For example, point data sets denoting the locations of measured temperature values."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "41",
+    "superClasses" : [ "42", "43" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AmountVectorDS"
+    },
+    "intersection" : [ "46", "47" ],
+    "comment" : {
+      "en" : "A dataset where each geometry denotes an amount of objects"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "45",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ObjectData",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "48"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA",
+    "baseIri" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IRA"
+    },
+    "comment" : {
+      "en" : "Intensive region attribute"
+    },
+    "attributes" : [ "external" ],
+    "id" : "52",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#MeasureAttribute",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "MeasureAttribute"
+    },
+    "comment" : {
+      "en" : "An attribute whose values are measures in a dataset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "62",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LatticeDS"
+    },
+    "intersection" : [ "68", "2" ],
+    "comment" : {
+      "en" : "A dataset of objects which tesselate space and contain statistical summaries. For example, the municipalities of the Netherlands"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "67",
+    "superClasses" : [ "68" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionDataSet"
+    },
+    "subClasses" : [ "2" ],
+    "intersection" : [ "16" ],
+    "attributes" : [ "intersection" ],
+    "id" : "69"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84_C",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "WGS84_C"
+    },
+    "individuals" : [ {
+      "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84",
+      "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+      "labels" : {
+        "IRI-based" : "WGS84"
+      }
+    } ],
+    "attributes" : [ "external" ],
+    "id" : "70"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CoreConceptDataSet"
+    },
+    "subClasses" : [ "71", "72", "46", "68", "73" ],
+    "comment" : {
+      "en" : "A data set which represents a core concept of spatial information. The attributes of this dataset are assumed to be of corresponding types."
+    },
+    "id" : "15",
+    "superClasses" : [ "16" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#RefSys",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RefSys"
+    },
+    "subClasses" : [ "75", "76" ],
+    "comment" : {
+      "en" : "The class of reference systems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "74"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Ratio",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ratio"
+    },
+    "attributes" : [ "external" ],
+    "id" : "79",
+    "superClasses" : [ "76", "80" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BooleanA"
+    },
+    "comment" : {
+      "en" : "Boolean attributes are spatial attributes within the range of True/False. They are special types of (bi)nominal attributes"
+    },
+    "id" : "81",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionA"
+    },
+    "subClasses" : [ "36" ],
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Atrribute of some region data sets"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "83",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LineData"
+    },
+    "intersection" : [ "85" ],
+    "attributes" : [ "intersection" ],
+    "id" : "84"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Data",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Data"
+    },
+    "individuals" : [ {
+      "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#data1",
+      "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+      "labels" : {
+        "IRI-based" : "data1"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of data items. Data items bind together different attributes of an observation, just like table records or primary keys."
+    },
+    "attributes" : [ "external" ],
+    "id" : "50"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#RefDomain",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RefDomain"
+    },
+    "comment" : {
+      "en" : "The class of domains of reference systems. This is a class of classes of reference systems, which is not expressible in OWL, but in RDF."
+    },
+    "attributes" : [ "external" ],
+    "id" : "86"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TrackDS"
+    },
+    "comment" : {
+      "en" : "A dataset representing tracks, i.e. point wise events (fixes) of the trajectory of some objects."
+    },
+    "id" : "87",
+    "superClasses" : [ "73", "88" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldVector"
+    },
+    "subClasses" : [ "66", "41" ],
+    "intersection" : [ "44" ],
+    "comment" : {
+      "en" : "A vector representation of a field. Can be a point or line measure, or a coverage"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "42",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Region"
+    },
+    "comment" : {
+      "en" : "A generalized geometry, including 2D and 3D extended regions. In 2D, this might be a Polygon."
+    },
+    "id" : "22",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VectorA"
+    },
+    "subClasses" : [ "90", "9", "10", "91", "42", "43" ],
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Attribute of some vector data set"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "89",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Interval",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Interval"
+    },
+    "individuals" : [ {
+      "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84",
+      "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+      "labels" : {
+        "IRI-based" : "WGS84"
+      }
+    } ],
+    "subClasses" : [ "79" ],
+    "attributes" : [ "external" ],
+    "id" : "80",
+    "superClasses" : [ "93", "76" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventDS"
+    },
+    "subClasses" : [ "87" ],
+    "comment" : {
+      "en" : "A spatial dataset representing events"
+    },
+    "id" : "73",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldDS"
+    },
+    "subClasses" : [ "96", "97", "98", "99", "100" ],
+    "comment" : {
+      "en" : "A spatial dataset representing a field"
+    },
+    "id" : "72",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Object",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Object"
+    },
+    "attributes" : [ "external" ],
+    "id" : "103"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointA"
+    },
+    "subClasses" : [ "40", "41" ],
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Attribute of some point data set"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "43",
+    "superClasses" : [ "89", "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldRasterDS"
+    },
+    "intersection" : [ "72", "1" ],
+    "comment" : {
+      "en" : "A dataset representing a field by homogeneous values using raster cells"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "96",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "BoundedPhen"
+    },
+    "union" : [ "90", "9", "56" ],
+    "comment" : {
+      "en" : "This is a spatial attribute which denotes a bounded phenomenon. Can be either a object vector or an existence raster"
+    },
+    "attributes" : [ "union" ],
+    "id" : "104",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExtLattice"
+    },
+    "intersection" : [ "106", "58" ],
+    "comment" : {
+      "en" : "This type of lattice has an extensive attribute. For example, a spatial dataset about the population number of municipalities"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "105"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ZeroExistenceRaster"
+    },
+    "comment" : {
+      "en" : "A raster dataset where 0 is interpreted as boolean \"false\""
+    },
+    "id" : "55",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Reference",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Reference"
+    },
+    "individuals" : [ {
+      "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#m1",
+      "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+      "labels" : {
+        "IRI-based" : "m1"
+      }
+    } ],
+    "comment" : {
+      "en" : "The class of symbols that refer to observable phenomena and belong to a reference system"
+    },
+    "attributes" : [ "external" ],
+    "id" : "34"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#DataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "DataSet"
+    },
+    "comment" : {
+      "en" : "The class of data sets (collections of data items)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "51"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ScaleLevel",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ScaleLevel"
+    },
+    "subClasses" : [ "93", "107", "79", "80" ],
+    "comment" : {
+      "en" : "These levels correspond to Stevensons scale levels and could be extended by further ones."
+    },
+    "attributes" : [ "external" ],
+    "id" : "76",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldRaster"
+    },
+    "intersection" : [ "44" ],
+    "comment" : {
+      "en" : "Field rasters are raster representations of continuous fields. For example, raster layers representing a terrain height (DTM)."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "108",
+    "superClasses" : [ "109" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Coverage"
+    },
+    "subClasses" : [ "111" ],
+    "intersection" : [ "44" ],
+    "comment" : {
+      "en" : "Coverages are tessellated layers that represent a continuous field. For example, landuse polygons."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "110",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#RegionDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionDataSet"
+    },
+    "attributes" : [ "external" ],
+    "id" : "113"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Ordinal",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Ordinal"
+    },
+    "subClasses" : [ "80" ],
+    "attributes" : [ "external" ],
+    "id" : "93",
+    "superClasses" : [ "107", "76" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectDS"
+    },
+    "subClasses" : [ "67" ],
+    "comment" : {
+      "en" : "A spatial data set representing objects"
+    },
+    "id" : "68",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AmountDS"
+    },
+    "subClasses" : [ "115", "45" ],
+    "comment" : {
+      "en" : "Dataset of amounts of objects"
+    },
+    "id" : "46",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#QualityData",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualityData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "118"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionData"
+    },
+    "intersection" : [ "85" ],
+    "attributes" : [ "intersection" ],
+    "id" : "119"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExistenceRaster"
+    },
+    "subClasses" : [ "55", "64" ],
+    "intersection" : [ "108", "81" ],
+    "comment" : {
+      "en" : "Existence rasters are rasters representing boolean fields (fields denoting whether something is present at a cell location or not)."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "56"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LineA"
+    },
+    "subClasses" : [ "66", "8" ],
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Attribute of some Line data set"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "10",
+    "superClasses" : [ "89", "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Raster"
+    },
+    "comment" : {
+      "en" : "A raster data set is a special kind of tessellation, where regions are regular squares."
+    },
+    "id" : "1",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#TimeRS",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TimeRS"
+    },
+    "comment" : {
+      "en" : "Temporal reference systems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "120",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ValueList",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ValueList"
+    },
+    "subClasses" : [ "29", "32" ],
+    "comment" : {
+      "undefined" : "This denotes a list of references, defined over some dataset (using property ofDataSet) and some attribute property of that dataset (using property ofAttr). It is used to talk about value lists as an enity (e.g. a GIS attribute)"
+    },
+    "attributes" : [ "external" ],
+    "id" : "30"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectVector"
+    },
+    "subClasses" : [ "36", "8", "40" ],
+    "intersection" : [ "11" ],
+    "comment" : {
+      "en" : "Object vectors are vector representation of a set of objecs and their quality. For example, a point layer denoting points of Interest (POI) or buildings in a city together with their quality, e.g. the building height."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "9",
+    "superClasses" : [ "89", "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialDataSet"
+    },
+    "subClasses" : [ "15" ],
+    "attributes" : [ "external" ],
+    "id" : "16"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RatioA"
+    },
+    "subClasses" : [ "18" ],
+    "comment" : {
+      "en" : "Spatial attribute on ratio scale level"
+    },
+    "id" : "19",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectQ"
+    },
+    "comment" : {
+      "en" : "An attribute that represents the quality of an object (core concept)"
+    },
+    "id" : "11",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#RefType",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RefType"
+    },
+    "subClasses" : [ "125", "126", "122", "120" ],
+    "attributes" : [ "external" ],
+    "id" : "75",
+    "superClasses" : [ "74" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "IntervalA"
+    },
+    "subClasses" : [ "106", "52", "19" ],
+    "comment" : {
+      "en" : "An interval scaled attribute"
+    },
+    "id" : "53",
+    "superClasses" : [ "127" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CountA"
+    },
+    "comment" : {
+      "en" : "An attribute that denotes counts of discrete entities (compare Chrisman 1998)"
+    },
+    "id" : "18",
+    "superClasses" : [ "19" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointData"
+    },
+    "intersection" : [ "85" ],
+    "attributes" : [ "intersection" ],
+    "id" : "128"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SupportAttribute",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SupportAttribute"
+    },
+    "comment" : {
+      "en" : "The class of attributes whose values are supports of a dataset"
+    },
+    "attributes" : [ "external" ],
+    "id" : "13",
+    "superClasses" : [ "29" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpatialData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "85"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "61",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#Thing",
+    "baseIri" : "http://owl2vowl.de",
+    "id" : "6",
+    "label" : {
+      "undefined" : "Thing"
+    }
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RasterA"
+    },
+    "subClasses" : [ "108" ],
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "Attribute of some Raster"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "109",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpaceRS",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "SpaceRS"
+    },
+    "individuals" : [ {
+      "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#WGS84",
+      "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+      "labels" : {
+        "IRI-based" : "WGS84"
+      }
+    } ],
+    "comment" : {
+      "en" : "Spatial reference systems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "126",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventQ"
+    },
+    "comment" : {
+      "en" : "This attribute represents a quality of an event (core concept). For example, the duration."
+    },
+    "id" : "141",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ObjectRS",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectRS"
+    },
+    "comment" : {
+      "en" : "Object reference systems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "122",
+    "superClasses" : [ "75", "107" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA",
+    "baseIri" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ERA"
+    },
+    "comment" : {
+      "en" : "Extensive region attribute"
+    },
+    "attributes" : [ "external" ],
+    "id" : "106",
+    "superClasses" : [ "53" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Track"
+    },
+    "comment" : {
+      "en" : "A type for a spatial track. A spatial track is a vector representation of \"fix\" events of some moving object. For example, a GPS track of points of a person moving."
+    },
+    "id" : "142",
+    "superClasses" : [ "91" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "EventVector"
+    },
+    "subClasses" : [ "142" ],
+    "intersection" : [ "141" ],
+    "comment" : {
+      "en" : "Events represented in terms of an attribute of a vector data set. For example, the magnitude of earthquakes represented as an attribute of a point data set."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "91",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NominalA"
+    },
+    "subClasses" : [ "81", "127" ],
+    "comment" : {
+      "en" : "A spatial attribute on nominal scale level"
+    },
+    "id" : "82",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VectorTessellation"
+    },
+    "intersection" : [ "2", "47" ],
+    "comment" : {
+      "en" : "This is a vector data set which is tessellated (and no raster)"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "4",
+    "superClasses" : [ "2" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Contour"
+    },
+    "comment" : {
+      "en" : "Contour layers are coverages that denote intervals of the reprepresented continuous field. For example, temperature intervals, represented as regions bounded by isolines of a temperature field."
+    },
+    "id" : "111",
+    "superClasses" : [ "110", "127" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#TemporalDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TemporalDataSet"
+    },
+    "attributes" : [ "external" ],
+    "id" : "144"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LineMeasures"
+    },
+    "intersection" : [ "44" ],
+    "comment" : {
+      "en" : "Linear representations of fields. Examples are isoline maps"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "66",
+    "superClasses" : [ "10", "42" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#RegionData",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionData"
+    },
+    "attributes" : [ "external" ],
+    "id" : "155"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkDS"
+    },
+    "comment" : {
+      "en" : "A spatial dataset representing a spatial network. Note thate a network in the sense of a core concept is a quantified relation between objects. For example, the traffic flow between municipalities or between two intersections. Streets themselves can also be seen as objects if they do not encode such relations"
+    },
+    "id" : "71",
+    "superClasses" : [ "15" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Attribute",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attribute"
+    },
+    "subClasses" : [ "13", "62" ],
+    "comment" : {
+      "en" : "A list of values of some attribute in a dataset"
+    },
+    "attributes" : [ "equivalent", "external" ],
+    "id" : "29",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Quality",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Quality"
+    },
+    "attributes" : [ "external" ],
+    "id" : "170"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "VectorRegionA"
+    },
+    "intersection" : [ "89", "83" ],
+    "comment" : {
+      "en" : "An attribute of a region vector data set"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "171",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PatchDS"
+    },
+    "intersection" : [ "69", "72" ],
+    "comment" : {
+      "en" : "A dataset which represents a field in terms patches of homogeneous values. Not necessarily tessellated"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "100",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute",
+    "equivalent" : [ "29" ],
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Attribute"
+    },
+    "subClasses" : [ "11", "89", "137", "171", "141", "44", "43", "83", "104", "59", "9", "10", "82", "109" ],
+    "comment" : {
+      "en" : "Attributes of a tabular dataset. Each attribute corresponds to a column in the table."
+    },
+    "attributes" : [ "equivalent" ],
+    "id" : "32",
+    "superClasses" : [ "30" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "OrdinalA"
+    },
+    "subClasses" : [ "53", "111" ],
+    "comment" : {
+      "en" : "A spatial attribute on ordinal scale level"
+    },
+    "id" : "127",
+    "superClasses" : [ "82" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "CoverageDS"
+    },
+    "subClasses" : [ "185" ],
+    "intersection" : [ "72", "2" ],
+    "comment" : {
+      "en" : "A dataset representing a field using (possibly irregular) patches of homogeneous values. For example, a landuse map or a soil map."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "97",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ContourDS"
+    },
+    "comment" : {
+      "en" : "A dataset representing a field using contours, which denote the boundaries of value intervals. For example, a terrain contour map."
+    },
+    "id" : "185",
+    "superClasses" : [ "97" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Nominal",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Nominal"
+    },
+    "subClasses" : [ "93", "122" ],
+    "attributes" : [ "external" ],
+    "id" : "107",
+    "superClasses" : [ "76" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectPoint"
+    },
+    "intersection" : [ "11" ],
+    "comment" : {
+      "en" : "An attribute of an object point dataset"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "40",
+    "superClasses" : [ "9", "43" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "AmountRasterDS"
+    },
+    "intersection" : [ "1", "46" ],
+    "comment" : {
+      "en" : "A raster data set where each cell represents an amount of objects"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "115",
+    "superClasses" : [ "46" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ExistenceVector"
+    },
+    "intersection" : [ "81", "42" ],
+    "comment" : {
+      "en" : "A vector layer attribute that satisfies a boolean expression and thus denotes the 'existence' of some attribute encoded phenomenon across space. Example is a layer of polygons of ''forest'' landuse or a layer of \"parks\"."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "90",
+    "superClasses" : [ "89" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NoDataExistenceRaster"
+    },
+    "comment" : {
+      "en" : "A raster dataset where  NoData is interpreted as boolean \"false\"."
+    },
+    "id" : "64",
+    "superClasses" : [ "56" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Lattice"
+    },
+    "intersection" : [ "11" ],
+    "comment" : {
+      "en" : "A lattice is a spatial tessellation that represents objects and their qualities. For example, a set of municipalities with average income."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "58",
+    "superClasses" : [ "59" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Vector"
+    },
+    "intersection" : [ "16" ],
+    "comment" : {
+      "en" : "Vector data sets are spatial data sets that are not raster"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "47"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LineMeasuresDS"
+    },
+    "intersection" : [ "72", "134" ],
+    "comment" : {
+      "en" : "A representation of a field as a line of homogeneous values"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "98",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Temporal",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Temporal"
+    },
+    "attributes" : [ "external" ],
+    "id" : "146"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "FieldQ"
+    },
+    "comment" : {
+      "en" : "An attribute which represents the quality of a field (core concept). This implies that the spatial data items in this data set are self-similar (their parts have the same attribute)"
+    },
+    "id" : "44",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointDataSet"
+    },
+    "subClasses" : [ "87" ],
+    "intersection" : [ "47" ],
+    "attributes" : [ "intersection" ],
+    "id" : "88"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "TessellationA"
+    },
+    "subClasses" : [ "110", "58" ],
+    "intersection" : [ "32" ],
+    "comment" : {
+      "en" : "An attribute of a tesselation data set"
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "59",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "ObjectRegion"
+    },
+    "intersection" : [ "11" ],
+    "attributes" : [ "intersection" ],
+    "id" : "36",
+    "superClasses" : [ "9", "83" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#QualityRS",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "QualityRS"
+    },
+    "comment" : {
+      "en" : "Quality reference systems"
+    },
+    "attributes" : [ "external" ],
+    "id" : "125",
+    "superClasses" : [ "75" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Point"
+    },
+    "comment" : {
+      "en" : "A generalized notion of a point in 2D and 3D"
+    },
+    "id" : "25",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "PointMeasuresDS"
+    },
+    "intersection" : [ "72", "88" ],
+    "comment" : {
+      "en" : "A dataset representing a field in terms of point-wise measures. For example, temperature sensor measurements."
+    },
+    "attributes" : [ "intersection" ],
+    "id" : "99",
+    "superClasses" : [ "72" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Spatial"
+    },
+    "subClasses" : [ "22", "25", "27" ],
+    "attributes" : [ "external" ],
+    "id" : "23"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#RegionAttribute",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "RegionAttribute"
+    },
+    "intersection" : [ "29" ],
+    "attributes" : [ "intersection", "external" ],
+    "id" : "231"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "NetworkQ"
+    },
+    "comment" : {
+      "en" : "This attribute represents the quality of a network edge."
+    },
+    "id" : "137",
+    "superClasses" : [ "32" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "LineDataSet"
+    },
+    "intersection" : [ "47" ],
+    "attributes" : [ "intersection" ],
+    "id" : "134"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Line"
+    },
+    "comment" : {
+      "en" : "A generalized notion of a line in 2D and 3D"
+    },
+    "id" : "27",
+    "superClasses" : [ "23" ]
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation",
+    "baseIri" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
+    "instances" : 0,
+    "label" : {
+      "IRI-based" : "Tessellation"
+    },
+    "subClasses" : [ "1", "4" ],
+    "comment" : {
+      "en" : "A region data set where spatial regions are tessellated (jointly covering and mutually non-overlapping) within a spatial extent"
+    },
+    "id" : "2",
+    "superClasses" : [ "69" ]
+  } ],
+  "property" : [ {
+    "id" : "0",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "3",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "5",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "12",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "14",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "17",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "20",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "21",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "24",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "26",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "28",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "31",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "33",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "35",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "38",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "39",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "49",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "54",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "57",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "60",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "63",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "65",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "77",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "78",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "92",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "94",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "95",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "101",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "112",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "114",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "116",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "121",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "123",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "129",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "130",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "131",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "132",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "133",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "135",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "136",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "138",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "139",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "143",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "145",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "148",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "149",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "150",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "151",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "152",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "153",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "154",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "156",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "157",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "158",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "159",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "124",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "140",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "160",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "161",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "162",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "163",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "164",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "165",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "166",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "167",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "168",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "169",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "117",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "172",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "173",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "174",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "175",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "176",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "177",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "178",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "179",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "180",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "181",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "182",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "183",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "184",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "186",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "187",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "188",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "189",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "190",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "191",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "192",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "193",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "194",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "195",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "196",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "197",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "198",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "199",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "200",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "201",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "202",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "203",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "204",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "205",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "206",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "207",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "208",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "209",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "210",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "211",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "212",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "213",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "214",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "215",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "216",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "217",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "218",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "219",
+    "type" : "owl:someValuesFrom"
+  }, {
+    "id" : "221",
+    "type" : "owl:disjointWith"
+  }, {
+    "id" : "147",
+    "type" : "owl:objectProperty"
+  }, {
+    "id" : "222",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "223",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "224",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "225",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "226",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "227",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "228",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "229",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "230",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "232",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "233",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "234",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "235",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "236",
+    "type" : "rdfs:SubClassOf"
+  }, {
+    "id" : "237",
+    "type" : "rdfs:SubClassOf"
+  } ],
+  "propertyAttribute" : [ {
+    "range" : "2",
+    "domain" : "1",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "0"
+  }, {
+    "range" : "2",
+    "domain" : "4",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "3"
+  }, {
+    "iri" : "http://www.w3.org/2002/07/owl#topObjectProperty",
+    "baseIri" : "http://www.w3.org/2002/07/owl",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "topObjectProperty"
+    },
+    "domain" : "6",
+    "subproperty" : [ "7" ],
+    "attributes" : [ "object", "external" ],
+    "id" : "5"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#supportConnect",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "13",
+    "label" : {
+      "IRI-based" : "supportConnect"
+    },
+    "domain" : "13",
+    "comment" : {
+      "en" : "A dummy property that realizes a full round to connect an attribute with itself via hasSupport (required to define the attribute subclass SupportAttribute)",
+      "undefined" : "ofDataSet o hasElement o hasSupport o valueOf"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "12"
+  }, {
+    "range" : "16",
+    "domain" : "15",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "14"
+  }, {
+    "range" : "19",
+    "domain" : "18",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "17"
+  }, {
+    "range" : "10",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "20"
+  }, {
+    "range" : "23",
+    "domain" : "22",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "21"
+  }, {
+    "range" : "23",
+    "domain" : "25",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "24"
+  }, {
+    "range" : "23",
+    "domain" : "27",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "26"
+  }, {
+    "range" : "30",
+    "domain" : "29",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "28"
+  }, {
+    "range" : "30",
+    "domain" : "32",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "31"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#valueOf",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "29",
+    "label" : {
+      "IRI-based" : "valueOf"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Inverse of hasValue"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "33"
+  }, {
+    "range" : "9",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "35"
+  }, {
+    "range" : "9",
+    "domain" : "8",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "38"
+  }, {
+    "range" : "9",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "39"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#elementOf",
+    "inverse" : "7",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "elementOf"
+    },
+    "domain" : "50",
+    "comment" : {
+      "en" : "The relation between a data item and its data set"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "49"
+  }, {
+    "range" : "56",
+    "domain" : "55",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "54"
+  }, {
+    "range" : "59",
+    "domain" : "58",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "57"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofAttr",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "61",
+    "label" : {
+      "IRI-based" : "ofAttr"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "Links value lists to some attribute property. This attribute property links items of the dataset of the value list to their references. Used to define a value list. Note this is not in OWL anymore (ranges over properties)"
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "60"
+  }, {
+    "range" : "56",
+    "domain" : "64",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "63"
+  }, {
+    "range" : "10",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "65"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#measureConnect",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "62",
+    "label" : {
+      "IRI-based" : "measureConnect"
+    },
+    "domain" : "62",
+    "comment" : {
+      "en" : "Dummy property used to self connect attributes via measures, in order to define a MeasureAttribute",
+      "undefined" : "ofDataSet o hasElement o hasMeasure o valueOf"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "77"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#supportOf",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "supportOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Inverse of hasSupport"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "78"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasureRef",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasMeasureRef"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "92"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasOWindowPart",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "hasOWindowPart"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "94"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasValue",
+    "inverse" : "33",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasValue"
+    },
+    "domain" : "29",
+    "comment" : {
+      "en" : "The relation between an attribute and one of its elements"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "95"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasRegion",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasRegion"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "50",
+    "comment" : {
+      "en" : "describes a data reference which is a region (can be measure or support)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "101"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "51",
+    "label" : {
+      "IRI-based" : "ofDataSet"
+    },
+    "domain" : "30",
+    "comment" : {
+      "en" : "This property defines the dataset of a value list. Thereis only one dataset for a value list"
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "112"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#references",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "references"
+    },
+    "domain" : "6",
+    "attributes" : [ "object", "external" ],
+    "id" : "114"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasPart",
+    "inverse" : "117",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasPart"
+    },
+    "domain" : "34",
+    "comment" : {
+      "en" : "Part of relation between references."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "116"
+  }, {
+    "range" : "75",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "121"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#classOfScheme",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "classOfScheme"
+    },
+    "superproperty" : [ "124" ],
+    "domain" : "6",
+    "comment" : {
+      "en" : "This is a special link to a (local) reference system which is actually a collection of classes. For example, class intervals defined for a choropleth map. The references of this system are classes and the reference systemis a class scheme"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "123"
+  }, {
+    "range" : "75",
+    "domain" : "126",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "129"
+  }, {
+    "range" : "75",
+    "domain" : "125",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "130"
+  }, {
+    "range" : "69",
+    "domain" : "88",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "131"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "68",
+    "label" : {
+      "IRI-based" : "ofDataSet"
+    },
+    "domain" : "11",
+    "comment" : {
+      "en" : "This property defines the dataset of a value list. Thereis only one dataset for a value list"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "132"
+  }, {
+    "range" : "88",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "133"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "72",
+    "label" : {
+      "IRI-based" : "ofDataSet"
+    },
+    "domain" : "44",
+    "comment" : {
+      "en" : "This property defines the dataset of a value list. Thereis only one dataset for a value list"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "135"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "71",
+    "label" : {
+      "IRI-based" : "ofDataSet"
+    },
+    "domain" : "137",
+    "comment" : {
+      "en" : "This property defines the dataset of a value list. Thereis only one dataset for a value list"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "136"
+  }, {
+    "range" : "69",
+    "domain" : "134",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "138"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure",
+    "inverse" : "140",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasMeasure"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "50",
+    "comment" : {
+      "en" : "The relation between a data item and its measure"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "139"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "37",
+    "label" : {
+      "IRI-based" : "hasElement"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "144",
+    "comment" : {
+      "en" : "the inverse of elementOf"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "143"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute",
+    "baseIri" : "http://geographicknowledge.de/vocab/GISConcepts.rdf",
+    "range" : "146",
+    "label" : {
+      "IRI-based" : "hasAttribute"
+    },
+    "domain" : "37",
+    "subproperty" : [ "139", "101", "147" ],
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "145"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "73",
+    "label" : {
+      "IRI-based" : "ofDataSet"
+    },
+    "domain" : "141",
+    "comment" : {
+      "en" : "This property defines the dataset of a value list. Thereis only one dataset for a value list"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "148"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute",
+    "baseIri" : "http://geographicknowledge.de/vocab/GISConcepts.rdf",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasAttribute"
+    },
+    "domain" : "85",
+    "subproperty" : [ "139", "101", "147" ],
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "149"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy",
+    "inverse" : "114",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "126",
+    "label" : {
+      "IRI-based" : "referencedBy"
+    },
+    "domain" : "23",
+    "subproperty" : [ "123" ],
+    "comment" : {
+      "en" : "The relation between a reference and its reference system. For example, a reference would be 50 and the reference system  may be Celsius"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "150"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy",
+    "inverse" : "114",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "120",
+    "label" : {
+      "IRI-based" : "referencedBy"
+    },
+    "domain" : "146",
+    "subproperty" : [ "123" ],
+    "comment" : {
+      "en" : "The relation between a reference and its reference system. For example, a reference would be 50 and the reference system  may be Celsius"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "151"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "85",
+    "label" : {
+      "IRI-based" : "hasElement"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "16",
+    "comment" : {
+      "en" : "the inverse of elementOf"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "152"
+  }, {
+    "range" : "34",
+    "domain" : "74",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "153"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "155",
+    "label" : {
+      "IRI-based" : "hasElement"
+    },
+    "superproperty" : [ "5" ],
+    "domain" : "113",
+    "comment" : {
+      "en" : "the inverse of elementOf"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "154"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasRegion",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "23",
+    "label" : {
+      "IRI-based" : "hasRegion"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "155",
+    "comment" : {
+      "en" : "describes a data reference which is a region (can be measure or support)."
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "156"
+  }, {
+    "range" : "42",
+    "domain" : "66",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "157"
+  }, {
+    "range" : "89",
+    "domain" : "90",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "158"
+  }, {
+    "range" : "42",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "159"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy",
+    "inverse" : "114",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "74",
+    "label" : {
+      "IRI-based" : "referencedBy"
+    },
+    "domain" : "34",
+    "subproperty" : [ "123" ],
+    "comment" : {
+      "en" : "The relation between a reference and its reference system. For example, a reference would be 50 and the reference system  may be Celsius"
+    },
+    "attributes" : [ "object", "external", "functional" ],
+    "id" : "124"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#measureOf",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "6",
+    "label" : {
+      "IRI-based" : "measureOf"
+    },
+    "domain" : "6",
+    "comment" : {
+      "en" : "Inverse of hasMeasure"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "140"
+  }, {
+    "range" : "83",
+    "domain" : "36",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "160"
+  }, {
+    "range" : "74",
+    "domain" : "76",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "161"
+  }, {
+    "range" : "29",
+    "domain" : "62",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "162"
+  }, {
+    "range" : "29",
+    "domain" : "13",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "163"
+  }, {
+    "range" : "15",
+    "domain" : "68",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "164"
+  }, {
+    "range" : "15",
+    "domain" : "46",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "165"
+  }, {
+    "range" : "74",
+    "domain" : "75",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "166"
+  }, {
+    "range" : "15",
+    "domain" : "73",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "167"
+  }, {
+    "range" : "15",
+    "domain" : "72",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "168"
+  }, {
+    "range" : "15",
+    "domain" : "71",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "169"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#partOf",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "partOf"
+    },
+    "domain" : "34",
+    "attributes" : [ "object", "external" ],
+    "id" : "117"
+  }, {
+    "range" : "69",
+    "domain" : "2",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "172"
+  }, {
+    "range" : "91",
+    "domain" : "142",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "173"
+  }, {
+    "range" : "109",
+    "domain" : "108",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "174"
+  }, {
+    "range" : "82",
+    "domain" : "127",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "175"
+  }, {
+    "range" : "82",
+    "domain" : "81",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "176"
+  }, {
+    "range" : "53",
+    "domain" : "106",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "177"
+  }, {
+    "range" : "75",
+    "domain" : "120",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "178"
+  }, {
+    "range" : "53",
+    "domain" : "19",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "179"
+  }, {
+    "range" : "53",
+    "domain" : "52",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "180"
+  }, {
+    "range" : "32",
+    "domain" : "109",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "181"
+  }, {
+    "range" : "32",
+    "domain" : "82",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "182"
+  }, {
+    "range" : "127",
+    "domain" : "53",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "183"
+  }, {
+    "range" : "73",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "184"
+  }, {
+    "range" : "32",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "186"
+  }, {
+    "range" : "32",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "187"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasOWindow",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasOWindow"
+    },
+    "domain" : "51",
+    "comment" : {
+      "en" : "The observation window of a data set. This is a (spatio-temporal) reference for which the data set represents a complete (closed world) observation (all facts that are not observed are wrong)."
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "188"
+  }, {
+    "range" : "32",
+    "domain" : "59",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "189"
+  }, {
+    "range" : "32",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "190"
+  }, {
+    "range" : "32",
+    "domain" : "44",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "191"
+  }, {
+    "range" : "32",
+    "domain" : "104",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "192"
+  }, {
+    "range" : "32",
+    "domain" : "83",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "193"
+  }, {
+    "range" : "32",
+    "domain" : "137",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "194"
+  }, {
+    "range" : "32",
+    "domain" : "89",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "195"
+  }, {
+    "range" : "32",
+    "domain" : "141",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "196"
+  }, {
+    "range" : "32",
+    "domain" : "171",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "197"
+  }, {
+    "range" : "80",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "198"
+  }, {
+    "range" : "89",
+    "domain" : "43",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "199"
+  }, {
+    "range" : "32",
+    "domain" : "11",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "200"
+  }, {
+    "range" : "89",
+    "domain" : "10",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "201"
+  }, {
+    "range" : "89",
+    "domain" : "9",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "202"
+  }, {
+    "range" : "89",
+    "domain" : "42",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "203"
+  }, {
+    "range" : "89",
+    "domain" : "91",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "204"
+  }, {
+    "range" : "46",
+    "domain" : "45",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "205"
+  }, {
+    "range" : "46",
+    "domain" : "115",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "206"
+  }, {
+    "range" : "59",
+    "domain" : "110",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "207"
+  }, {
+    "range" : "88",
+    "domain" : "87",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "208"
+  }, {
+    "range" : "110",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "209"
+  }, {
+    "range" : "68",
+    "domain" : "67",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "210"
+  }, {
+    "range" : "93",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "211"
+  }, {
+    "range" : "74",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "212"
+  }, {
+    "range" : "34",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "213"
+  }, {
+    "range" : "34",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "214"
+  }, {
+    "range" : "74",
+    "domain" : "51",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "215"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy",
+    "inverse" : "114",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "122",
+    "label" : {
+      "IRI-based" : "referencedBy"
+    },
+    "domain" : "103",
+    "subproperty" : [ "123" ],
+    "comment" : {
+      "en" : "The relation between a reference and its reference system. For example, a reference would be 50 and the reference system  may be Celsius"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "216"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport",
+    "inverse" : "78",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "103",
+    "label" : {
+      "IRI-based" : "hasSupport"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "48",
+    "comment" : {
+      "en" : "The relation between a data item and its support"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "217"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#referencedBy",
+    "inverse" : "114",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "125",
+    "label" : {
+      "IRI-based" : "referencedBy"
+    },
+    "domain" : "170",
+    "subproperty" : [ "123" ],
+    "comment" : {
+      "en" : "The relation between a reference and its reference system. For example, a reference would be 50 and the reference system  may be Celsius"
+    },
+    "attributes" : [ "object", "external", "someValues", "functional" ],
+    "id" : "218"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasMeasure",
+    "inverse" : "140",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "170",
+    "label" : {
+      "IRI-based" : "hasMeasure"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "118",
+    "comment" : {
+      "en" : "The relation between a data item and its measure"
+    },
+    "attributes" : [ "object", "external", "someValues" ],
+    "id" : "219"
+  }, {
+    "range" : "51",
+    "domain" : "50",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "221"
+  }, {
+    "iri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasSupport",
+    "inverse" : "78",
+    "baseIri" : "http://geographicknowledge.de/vocab/AnalysisData.rdf",
+    "range" : "34",
+    "label" : {
+      "IRI-based" : "hasSupport"
+    },
+    "superproperty" : [ "102" ],
+    "domain" : "50",
+    "comment" : {
+      "en" : "The relation between a data item and its support"
+    },
+    "attributes" : [ "object", "external" ],
+    "id" : "147"
+  }, {
+    "range" : "76",
+    "domain" : "107",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "222"
+  }, {
+    "range" : "76",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "223"
+  }, {
+    "range" : "76",
+    "domain" : "80",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "224"
+  }, {
+    "range" : "76",
+    "domain" : "79",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "225"
+  }, {
+    "range" : "107",
+    "domain" : "122",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "226"
+  }, {
+    "range" : "107",
+    "domain" : "93",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "227"
+  }, {
+    "range" : "43",
+    "domain" : "41",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "228"
+  }, {
+    "range" : "43",
+    "domain" : "40",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "229"
+  }, {
+    "range" : "97",
+    "domain" : "185",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "230"
+  }, {
+    "range" : "72",
+    "domain" : "100",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "232"
+  }, {
+    "range" : "72",
+    "domain" : "99",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "233"
+  }, {
+    "range" : "72",
+    "domain" : "96",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "234"
+  }, {
+    "range" : "127",
+    "domain" : "111",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "235"
+  }, {
+    "range" : "72",
+    "domain" : "98",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "236"
+  }, {
+    "range" : "72",
+    "domain" : "97",
+    "attributes" : [ "anonymous", "object" ],
+    "id" : "237"
+  } ]
+}

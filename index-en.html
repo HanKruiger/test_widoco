@@ -6,7 +6,7 @@
 
 
 <!-- SCHEMA.ORG METADATA -->
-<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://geographicknowledge.de/vocab/CoreConceptData.rdf","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://geographicknowledge.de/vocab/CoreConceptData.rdf","name":"http://geographicknowledge.de/vocab/CoreConceptData.rdf", "headline":"Document describing the ontology http://geographicknowledge.de/vocab/CoreConceptData.rdf", "datePublished":"Tue Jan 14 10:35:18 GMT 2020"}</script>
+<script type="application/ld+json">{"@context":"http://schema.org","@type":"TechArticle","url":"http://geographicknowledge.de/vocab/CoreConceptData.rdf","image":"http://vowl.visualdataweb.org/webvowl/#iri=http://geographicknowledge.de/vocab/CoreConceptData.rdf","name":"http://geographicknowledge.de/vocab/CoreConceptData.rdf", "headline":"Document describing the ontology http://geographicknowledge.de/vocab/CoreConceptData.rdf", "datePublished":"Tue Jan 14 11:52:43 CET 2020"}</script>
 
 <script src="resources/jquery.js"></script> 
 <script src="resources/marked.min.js"></script> 
@@ -44,15 +44,8 @@ function loadTOC(){
 }
  $.fn.ignore = function(sel){
         return this.clone().find(sel||">*").remove().end();
- };    $(function(){
-      $("#abstract").load("sections/abstract-en.html"); 
-      $("#introduction").load("sections/introduction-en.html"); 
-      $("#overview").load("sections/overview-en.html"); 
-      $("#description").load("sections/description-en.html"); 
-      $("#references").load("sections/references-en.html"); 
-      $("#crossref").load("sections/crossref-en.html", null, loadHash); 
-    });
-    </script> 
+ }; 
+   </script> 
   </head> 
 
 <body>
@@ -66,20 +59,2826 @@ function loadTOC(){
 <dd><a href="http://geographicknowledge.de/vocab/AnalysisData.rdf">AnalysisData.rdf</a></dd>
 
 <dt>Download serialization:</dt><dd><span><a href="ontology.json" target="_blank"><img src="https://img.shields.io/badge/Format-JSON_LD-blue.svg" alt="JSON-LD" /></a> </span><span><a href="ontology.xml" target="_blank"><img src="https://img.shields.io/badge/Format-RDF/XML-blue.svg" alt="RDF/XML" /></a> </span><span><a href="ontology.nt" target="_blank"><img src="https://img.shields.io/badge/Format-N_Triples-blue.svg" alt="N-Triples" /></a> </span><span><a href="ontology.ttl" target="_blank"><img src="https://img.shields.io/badge/Format-TTL-blue.svg" alt="TTL" /></a> </span></dd><dt>License: </dt><dd><a href="http://insertlicenseURIhere.org" target="_blank"><img src="https://img.shields.io/badge/License-license%20name%20goes%20here-blue.svg" alt="http://insertlicenseURIhere.org" /></a>
-</dd><!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
+</dd><dt>Visualization:</dt><dd><a href="webvowl/index.html#" target="_blank"><img src="https://img.shields.io/badge/Visualize_with-WebVowl-blue.svg" alt="Visualize with WebVowl" /></a></dd>
+<!-- <dt>Evaluation:</dt><dd><a href="OOPSEvaluation/OOPSeval.html#" target="_blank"><img src="https://img.shields.io/badge/Evaluate_with-OOPS! (OntOlogy Pitfall Scanner!)-blue.svg" alt="Evaluate with OOPS!" /></a></dd> --></dl>
 
-<a href="provenance/provenance-en.html" target="_blank">Provenance of this page</a><hr/>
+<hr/>
 </div>
 <div class="status">
 <div>
 <span>Ontology Specification Draft</span>
 </div>
-</div>     <div id="abstract"></div>
-<div id="toc"></div>     <div id="introduction"></div>
-     <div id="overview"></div>
-     <div id="description"></div>
-     <div id="crossref"></div>
-     <div id="references"></div>
+</div>     <div id="abstract"><h2>Abstract</h2><span class="markdown">
+This is a place holder text for the abstract. The abstract should contain a couple of sentences summarizing the ontology and its purpose.</span>
+</div>
+<div id="toc"></div> 
+
+<!--INTRODUCTION SECTION-->
+    <div id="introduction"><h2 id="intro" class="list">Introduction <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a place holder text for the introduction. The introduction should briefly describe the ontology, its motivation, state of the art and goals.</span>
+<div id="namespacedeclarations">
+<h3 id="ns" class="list">Namespace declarations</h3>
+<div id="ns" align="center">
+<table>
+<caption> <a href="#ns"> Table 1</a>: Namespaces used in the document </caption>
+<tbody>
+<tr><td><b>[Ontology NS Prefix]</b></td><td>&lt;http://geographicknowledge.de/vocab/CoreConceptData.rdf&gt;</td></tr>
+<tr><td><b>extensivemeasures-rdf</b></td><td>&lt;http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf&gt;</td></tr>
+<tr><td><b>analysisdata-rdf</b></td><td>&lt;http://geographicknowledge.de/vocab/AnalysisData.rdf&gt;</td></tr>
+<tr><td><b>owl</b></td><td>&lt;http://www.w3.org/2002/07/owl&gt;</td></tr>
+<tr><td><b>rdf</b></td><td>&lt;http://www.w3.org/1999/02/22-rdf-syntax-ns&gt;</td></tr>
+<tr><td><b>xsd</b></td><td>&lt;http://www.w3.org/2001/XMLSchema&gt;</td></tr>
+<tr><td><b>gisconcepts-rdf</b></td><td>&lt;http://geographicknowledge.de/vocab/GISConcepts.rdf&gt;</td></tr>
+<tr><td><b>vocab</b></td><td>&lt;http://geographicknowledge.de/vocab&gt;</td></tr>
+<tr><td><b>rdfs</b></td><td>&lt;http://www.w3.org/2000/01/rdf-schema&gt;</td></tr>
+</tbody>
+</table>
+</div>
+</div>
+</div>
+  
+
+<!--OVERVIEW SECTION-->
+    <div id="overview"><h2 id="overv" class="list">[Ontology Name]: Overview <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This ontology has the following classes and properties.</span>
+<h4>Classes</h4>
+<ul class="hlist">
+   <li>
+      <a href="#AmountDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">
+         <span>amount d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#AmountRasterDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS">
+         <span>amount raster d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#AmountVectorDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS">
+         <span>amount vector d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Attribute"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">
+         <span>attribute</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BooleanA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA">
+         <span>boolean a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#BoundedPhen"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen">
+         <span>bounded phen</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Contour"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour">
+         <span>contour</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ContourDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS">
+         <span>contour d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CoreConceptDataSet"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">
+         <span>core concept data set</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CountA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA">
+         <span>count a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Coverage"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage">
+         <span>coverage</span>
+      </a>
+   </li>
+   <li>
+      <a href="#CoverageDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS">
+         <span>coverage d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA"
+         title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA">
+         <span>e r a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EventDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS">
+         <span>event d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EventQ"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ">
+         <span>event q</span>
+      </a>
+   </li>
+   <li>
+      <a href="#EventVector"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector">
+         <span>event vector</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ExistenceRaster"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster">
+         <span>existence raster</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ExistenceVector"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector">
+         <span>existence vector</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ExtLattice"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice">
+         <span>ext lattice</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FieldDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">
+         <span>field d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FieldQ"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">
+         <span>field q</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FieldRaster"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster">
+         <span>field raster</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FieldRasterDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS">
+         <span>field raster d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#FieldVector"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector">
+         <span>field vector</span>
+      </a>
+   </li>
+   <li>
+      <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA"
+         title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA">
+         <span>i r a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#IntervalA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA">
+         <span>interval a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Lattice"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice">
+         <span>lattice</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LatticeDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS">
+         <span>lattice d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Line"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line">
+         <span>line</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LineA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA">
+         <span>line a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LineData"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData">
+         <span>line data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LineDataSet"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">
+         <span>line data set</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LineMeasures"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures">
+         <span>line measures</span>
+      </a>
+   </li>
+   <li>
+      <a href="#LineMeasuresDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS">
+         <span>line measures d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NetworkDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS">
+         <span>network d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NetworkQ"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ">
+         <span>network q</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NoDataExistenceRaster"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster">
+         <span>no data existence raster</span>
+      </a>
+   </li>
+   <li>
+      <a href="#NominalA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA">
+         <span>nominal a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObjectDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">
+         <span>object d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObjectLine"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine">
+         <span>object line</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObjectPoint"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint">
+         <span>object point</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObjectQ"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">
+         <span>object q</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObjectRegion"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion">
+         <span>object region</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ObjectVector"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">
+         <span>object vector</span>
+      </a>
+   </li>
+   <li>
+      <a href="#OrdinalA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA">
+         <span>ordinal a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PatchDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS">
+         <span>patch d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Point"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point">
+         <span>point</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PointA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA">
+         <span>point a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PointData"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData">
+         <span>point data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PointDataSet"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">
+         <span>point data set</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PointMeasures"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures">
+         <span>point measures</span>
+      </a>
+   </li>
+   <li>
+      <a href="#PointMeasuresDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS">
+         <span>point measures d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Raster"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">
+         <span>raster</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RasterA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA">
+         <span>raster a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RatioA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA">
+         <span>ratio a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Region"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region">
+         <span>region</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RegionA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA">
+         <span>region a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RegionData"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData">
+         <span>region data</span>
+      </a>
+   </li>
+   <li>
+      <a href="#RegionDataSet"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">
+         <span>region data set</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Tessellation"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">
+         <span>tessellation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TessellationA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA">
+         <span>tessellation a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Track"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track">
+         <span>track</span>
+      </a>
+   </li>
+   <li>
+      <a href="#TrackDS"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS">
+         <span>track d s</span>
+      </a>
+   </li>
+   <li>
+      <a href="#Vector"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">
+         <span>vector</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VectorA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">
+         <span>vector a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VectorRegionA"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA">
+         <span>vector region a</span>
+      </a>
+   </li>
+   <li>
+      <a href="#VectorTessellation"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation">
+         <span>vector tessellation</span>
+      </a>
+   </li>
+   <li>
+      <a href="#ZeroExistenceRaster"
+         title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster">
+         <span>zero existence raster</span>
+      </a>
+   </li>
+</ul><iframe align="center" width="100%" height ="500px" src="webvowl/index.html"></iframe> 
+</div>
+  
+
+<!--DESCRIPTION SECTION-->
+    <div id="description"><h2 id="desc" class="list">[Ontology Name]: Description <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+This is a placeholder text for the description of your ontology. The description should include an explanation and a diagram explaining how the classes are related, examples of usage, etc.</span>
+
+</div>
+   
+
+<!--CROSSREF SECTION-->
+   <div id="crossref"><h2 id="crossreference" class="list">Cross reference for [Ontology Name] classes, properties and dataproperties <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+This section provides details for each class and property defined by [Ontology Name].
+<div id="classes">
+   <h3 id="classes-headline" class="list">Classes</h3>
+   <ul class="hlist">
+      <li>
+         <a href="#AmountDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">
+            <span>amount d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#AmountRasterDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS">
+            <span>amount raster d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#AmountVectorDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS">
+            <span>amount vector d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Attribute"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">
+            <span>attribute</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BooleanA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA">
+            <span>boolean a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#BoundedPhen"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen">
+            <span>bounded phen</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Contour"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour">
+            <span>contour</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ContourDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS">
+            <span>contour d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#CoreConceptDataSet"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">
+            <span>core concept data set</span>
+         </a>
+      </li>
+      <li>
+         <a href="#CountA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA">
+            <span>count a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Coverage"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage">
+            <span>coverage</span>
+         </a>
+      </li>
+      <li>
+         <a href="#CoverageDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS">
+            <span>coverage d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA"
+            title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA">
+            <span>e r a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EventDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS">
+            <span>event d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EventQ"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ">
+            <span>event q</span>
+         </a>
+      </li>
+      <li>
+         <a href="#EventVector"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector">
+            <span>event vector</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ExistenceRaster"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster">
+            <span>existence raster</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ExistenceVector"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector">
+            <span>existence vector</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ExtLattice"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice">
+            <span>ext lattice</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FieldDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">
+            <span>field d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FieldQ"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">
+            <span>field q</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FieldRaster"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster">
+            <span>field raster</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FieldRasterDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS">
+            <span>field raster d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#FieldVector"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector">
+            <span>field vector</span>
+         </a>
+      </li>
+      <li>
+         <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA"
+            title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA">
+            <span>i r a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#IntervalA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA">
+            <span>interval a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Lattice"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice">
+            <span>lattice</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LatticeDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS">
+            <span>lattice d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Line"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line">
+            <span>line</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LineA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA">
+            <span>line a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LineData"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData">
+            <span>line data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LineDataSet"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">
+            <span>line data set</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LineMeasures"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures">
+            <span>line measures</span>
+         </a>
+      </li>
+      <li>
+         <a href="#LineMeasuresDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS">
+            <span>line measures d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NetworkDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS">
+            <span>network d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NetworkQ"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ">
+            <span>network q</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NoDataExistenceRaster"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster">
+            <span>no data existence raster</span>
+         </a>
+      </li>
+      <li>
+         <a href="#NominalA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA">
+            <span>nominal a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">
+            <span>object d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectLine"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine">
+            <span>object line</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectPoint"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint">
+            <span>object point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectQ"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">
+            <span>object q</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectRegion"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion">
+            <span>object region</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ObjectVector"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">
+            <span>object vector</span>
+         </a>
+      </li>
+      <li>
+         <a href="#OrdinalA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA">
+            <span>ordinal a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PatchDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS">
+            <span>patch d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Point"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point">
+            <span>point</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PointA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA">
+            <span>point a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PointData"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData">
+            <span>point data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PointDataSet"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">
+            <span>point data set</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PointMeasures"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures">
+            <span>point measures</span>
+         </a>
+      </li>
+      <li>
+         <a href="#PointMeasuresDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS">
+            <span>point measures d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Raster"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">
+            <span>raster</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RasterA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA">
+            <span>raster a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RatioA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA">
+            <span>ratio a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Region"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region">
+            <span>region</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RegionA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA">
+            <span>region a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RegionData"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData">
+            <span>region data</span>
+         </a>
+      </li>
+      <li>
+         <a href="#RegionDataSet"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">
+            <span>region data set</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Tessellation"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">
+            <span>tessellation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TessellationA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA">
+            <span>tessellation a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Track"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track">
+            <span>track</span>
+         </a>
+      </li>
+      <li>
+         <a href="#TrackDS"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS">
+            <span>track d s</span>
+         </a>
+      </li>
+      <li>
+         <a href="#Vector"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">
+            <span>vector</span>
+         </a>
+      </li>
+      <li>
+         <a href="#VectorA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">
+            <span>vector a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#VectorRegionA"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA">
+            <span>vector region a</span>
+         </a>
+      </li>
+      <li>
+         <a href="#VectorTessellation"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation">
+            <span>vector tessellation</span>
+         </a>
+      </li>
+      <li>
+         <a href="#ZeroExistenceRaster"
+            title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster">
+            <span>zero existence raster</span>
+         </a>
+      </li>
+   </ul>
+   <div class="entity" id="AmountDS">
+      <h3>amount d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS</p>
+      <div class="comment">
+         <span class="markdown">Dataset of amounts of objects</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CoreConceptDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">core concept data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AmountRasterDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS">amount raster d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#AmountVectorDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS">amount vector d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AmountRasterDS">
+      <h3>amount raster d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS</p>
+      <div class="comment">
+         <span class="markdown">A raster data set where each cell represents an amount of objects</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#AmountDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">amount d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#Raster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#AmountDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">amount d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="AmountVectorDS">
+      <h3>amount vector d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset where each geometry denotes an amount of objects</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#AmountDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">amount d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#AmountDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">amount d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Attribute">
+      <h3>attribute<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute</p>
+      <div class="comment">
+         <span class="markdown">Attributes of a tabular dataset. Each attribute corresponds to a column in the table.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ValueList">value list</span>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#BoundedPhen"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen">bounded phen</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EventQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ">event q</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FieldQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">field q</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LineA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA">line a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#NetworkQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ">network q</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#NominalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA">nominal a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">object q</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">object vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA">point a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RasterA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA">raster a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RegionA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA">region a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#TessellationA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA">tessellation a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VectorRegionA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA">vector region a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BooleanA">
+      <h3>boolean a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA</p>
+      <div class="comment">
+         <span class="markdown">Boolean attributes are spatial attributes within the range of True/False. They are special types of (bi)nominal attributes</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NominalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA">nominal a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="BoundedPhen">
+      <h3>bounded phen<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen</p>
+      <div class="comment">
+         <span class="markdown">This is a spatial attribute which denotes a bounded phenomenon. Can be either a object vector or an existence raster</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ExistenceRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster">existence raster</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#ExistenceVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector">existence vector</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">or</span> 
+            <a href="#ObjectVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">object vector</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Contour">
+      <h3>contour<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour</p>
+      <div class="comment">
+         <span class="markdown">Contour layers are coverages that denote intervals of the reprepresented continuous field. For example, temperature intervals, represented as regions bounded by isolines of a temperature field.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Coverage"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage">coverage</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OrdinalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA">ordinal a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ContourDS">
+      <h3>contour d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset representing a field using contours, which denote the boundaries of value intervals. For example, a terrain contour map.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CoverageDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS">coverage d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CoreConceptDataSet">
+      <h3>core concept data set<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet</p>
+      <div class="comment">
+         <span class="markdown">A data set which represents a core concept of spatial information. The attributes of this dataset are assumed to be of corresponding types.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet">spatial data set</span>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#AmountDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">amount d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#EventDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS">event d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#NetworkDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS">network d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">object d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CountA">
+      <h3>count a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA</p>
+      <div class="comment">
+         <span class="markdown">An attribute that denotes counts of discrete entities (compare Chrisman 1998)</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RatioA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA">ratio a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Coverage">
+      <h3>coverage<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage</p>
+      <div class="comment">
+         <span class="markdown">Coverages are tessellated layers that represent a continuous field. For example, landuse polygons.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">field q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TessellationA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA">tessellation a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Contour"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour">contour</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="CoverageDS">
+      <h3>coverage d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset representing a field using (possibly irregular) patches of homogeneous values. For example, a landuse map or a soil map.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ContourDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS">contour d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA">
+      <h3>e r a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA</p>
+      <div class="comment">
+         <span class="markdown">Extensive region attribute</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#IntervalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA">interval a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EventDS">
+      <h3>event d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS</p>
+      <div class="comment">
+         <span class="markdown">A spatial dataset representing events</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CoreConceptDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">core concept data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#TrackDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS">track d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EventQ">
+      <h3>event q<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ</p>
+      <div class="comment">
+         <span class="markdown">This attribute represents a quality of an event (core concept). For example, the duration.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#EventDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS">event d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="EventVector">
+      <h3>event vector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector</p>
+      <div class="comment">
+         <span class="markdown">Events represented in terms of an attribute of a vector data set. For example, the magnitude of earthquakes represented as an attribute of a point data set.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#EventQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ">event q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Track"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track">track</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExistenceRaster">
+      <h3>existence raster<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster</p>
+      <div class="comment">
+         <span class="markdown">Existence rasters are rasters representing boolean fields (fields denoting whether something is present at a cell location or not).</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#BooleanA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA">boolean a</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#FieldRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster">field raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#NoDataExistenceRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster">no data existence raster</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ZeroExistenceRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster">zero existence raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExistenceVector">
+      <h3>existence vector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector</p>
+      <div class="comment">
+         <span class="markdown">A vector layer attribute that satisfies a boolean expression and thus denotes the 'existence' of some attribute encoded phenomenon across space. Example is a layer of polygons of ''forest'' landuse or a layer of "parks".</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#BooleanA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA">boolean a</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#FieldVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector">field vector</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ExtLattice">
+      <h3>ext lattice<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice</p>
+      <div class="comment">
+         <span class="markdown">This type of lattice has an extensive attribute. For example, a spatial dataset about the population number of municipalities</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Lattice"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice">lattice</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA"
+               title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA">e r a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FieldDS">
+      <h3>field d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS</p>
+      <div class="comment">
+         <span class="markdown">A spatial dataset representing a field</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CoreConceptDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">core concept data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CoverageDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS">coverage d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FieldRasterDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS">field raster d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LineMeasuresDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS">line measures d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PatchDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS">patch d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointMeasuresDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS">point measures d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FieldQ">
+      <h3>field q<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ</p>
+      <div class="comment">
+         <span class="markdown">An attribute which represents the quality of a field (core concept). This implies that the spatial data items in this data set are self-similar (their parts have the same attribute)</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FieldRaster">
+      <h3>field raster<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster</p>
+      <div class="comment">
+         <span class="markdown">Field rasters are raster representations of continuous fields. For example, raster layers representing a terrain height (DTM).</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">field q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Raster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">raster</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RasterA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA">raster a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FieldRasterDS">
+      <h3>field raster d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset representing a field by homogeneous values using raster cells</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#Raster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="FieldVector">
+      <h3>field vector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector</p>
+      <div class="comment">
+         <span class="markdown">A vector representation of a field. Can be a point or line measure, or a coverage</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">field q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LineMeasures"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures">line measures</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointMeasures"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures">point measures</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA">
+      <h3>i r a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA</p>
+      <div class="comment">
+         <span class="markdown">Intensive region attribute</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#IntervalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA">interval a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="IntervalA">
+      <h3>interval a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA</p>
+      <div class="comment">
+         <span class="markdown">An interval scaled attribute</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#OrdinalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA">ordinal a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA"
+               title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA">e r a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA"
+               title="http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA">i r a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RatioA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA">ratio a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Lattice">
+      <h3>lattice<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice</p>
+      <div class="comment">
+         <span class="markdown">A lattice is a spatial tessellation that represents objects and their qualities. For example, a set of municipalities with average income.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ObjectQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">object q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#TessellationA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA">tessellation a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LatticeDS">
+      <h3>lattice d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset of objects which tesselate space and contain statistical summaries. For example, the municipalities of the Netherlands</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ObjectDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">object d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ObjectDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">object d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Line">
+      <h3>line<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line</p>
+      <div class="comment">
+         <span class="markdown">A generalized notion of a line in 2D and 3D</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial">spatial</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LineA">
+      <h3>line a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA</p>
+      <div class="comment">
+         <span class="markdown">Attribute of some Line data set</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#LineDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">line data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LineMeasures"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures">line measures</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectLine"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine">object line</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LineData">
+      <h3>line data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData">spatial data</span> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute">has attribute</span> 
+            <span class="logic">some</span> 
+            <a href="#Line"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line">line</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="LineDataSet">
+      <h3>line data set<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement">has element</span> 
+            <span class="logic">only</span> 
+            <a href="#LineData"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData">line data</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RegionDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">region data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LineMeasures">
+      <h3>line measures<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures</p>
+      <div class="comment">
+         <span class="markdown">Linear representations of fields. Examples are isoline maps</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">field q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#LineDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">line data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector">field vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LineA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA">line a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="LineMeasuresDS">
+      <h3>line measures d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS</p>
+      <div class="comment">
+         <span class="markdown">A representation of a field as a line of homogeneous values</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#LineDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">line data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NetworkDS">
+      <h3>network d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS</p>
+      <div class="comment">
+         <span class="markdown">A spatial dataset representing a spatial network. Note thate a network in the sense of a core concept is a quantified relation between objects. For example, the traffic flow between municipalities or between two intersections. Streets themselves can also be seen as objects if they do not encode such relations</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CoreConceptDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">core concept data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NetworkQ">
+      <h3>network q<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ</p>
+      <div class="comment">
+         <span class="markdown">This attribute represents the quality of a network edge.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#NetworkDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS">network d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NoDataExistenceRaster">
+      <h3>no data existence raster<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster</p>
+      <div class="comment">
+         <span class="markdown">A raster dataset where  NoData is interpreted as boolean "false".</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ExistenceRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster">existence raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="NominalA">
+      <h3>nominal a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA</p>
+      <div class="comment">
+         <span class="markdown">A spatial attribute on nominal scale level</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#BooleanA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA">boolean a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#OrdinalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA">ordinal a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectDS">
+      <h3>object d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS</p>
+      <div class="comment">
+         <span class="markdown">A spatial data set representing objects</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#CoreConceptDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">core concept data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#LatticeDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS">lattice d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectLine">
+      <h3>object line<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine</p>
+      <div class="comment">
+         <span class="markdown">An attribute of an object line dataset</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ObjectQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">object q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#LineDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">line data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#LineA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA">line a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">object vector</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectPoint">
+      <h3>object point<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint</p>
+      <div class="comment">
+         <span class="markdown">An attribute of an object point dataset</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ObjectQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">object q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ObjectVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">object vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA">point a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectQ">
+      <h3>object q<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ</p>
+      <div class="comment">
+         <span class="markdown">An attribute that represents the quality of an object (core concept)</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#ObjectDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">object d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectRegion">
+      <h3>object region<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ObjectQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">object q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#RegionDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">region data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ObjectVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">object vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RegionA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA">region a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ObjectVector">
+      <h3>object vector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector</p>
+      <div class="comment">
+         <span class="markdown">Object vectors are vector representation of a set of objecs and their quality. For example, a point layer denoting points of Interest (POI) or buildings in a city together with their quality, e.g. the building height.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#ObjectQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">object q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ObjectLine"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine">object line</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectPoint"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint">object point</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectRegion"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion">object region</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="OrdinalA">
+      <h3>ordinal a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA</p>
+      <div class="comment">
+         <span class="markdown">A spatial attribute on ordinal scale level</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#NominalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA">nominal a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Contour"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour">contour</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#IntervalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA">interval a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PatchDS">
+      <h3>patch d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset which represents a field in terms patches of homogeneous values. Not necessarily tessellated</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#RegionDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">region data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Point">
+      <h3>point<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point</p>
+      <div class="comment">
+         <span class="markdown">A generalized notion of a point in 2D and 3D</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial">spatial</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PointA">
+      <h3>point a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA</p>
+      <div class="comment">
+         <span class="markdown">Attribute of some point data set</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ObjectPoint"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint">object point</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointMeasures"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures">point measures</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PointData">
+      <h3>point data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData">spatial data</span> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute">has attribute</span> 
+            <span class="logic">some</span> 
+            <a href="#Point"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point">point</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="PointDataSet">
+      <h3>point data set<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement">has element</span> 
+            <span class="logic">only</span> 
+            <a href="#PointData"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData">point data</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#TrackDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS">track d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#LineDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">line data set</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#RegionDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">region data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PointMeasures">
+      <h3>point measures<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures</p>
+      <div class="comment">
+         <span class="markdown">Point measures are point-like representations of fields. For example, point data sets denoting the locations of measured temperature values.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldQ"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">field q</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector">field vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA">point a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="PointMeasuresDS">
+      <h3>point measures d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset representing a field in terms of point-wise measures. For example, temperature sensor measurements.</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#FieldDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">field d s</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Raster">
+      <h3>raster<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster</p>
+      <div class="comment">
+         <span class="markdown">A raster data set is a special kind of tessellation, where regions are regular squares.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RasterA">
+      <h3>raster a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA</p>
+      <div class="comment">
+         <span class="markdown">Attribute of some Raster</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Raster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">raster</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#FieldRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster">field raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RatioA">
+      <h3>ratio a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA</p>
+      <div class="comment">
+         <span class="markdown">Spatial attribute on ratio scale level</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#IntervalA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA">interval a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#CountA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA">count a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Region">
+      <h3>region<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region</p>
+      <div class="comment">
+         <span class="markdown">A generalized geometry, including 2D and 3D extended regions. In 2D, this might be a Polygon.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial">spatial</span>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RegionA">
+      <h3>region a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA</p>
+      <div class="comment">
+         <span class="markdown">Atrribute of some region data sets</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#RegionDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">region data set</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#ObjectRegion"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion">object region</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="RegionData">
+      <h3>region data<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData">spatial data</span> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute">has attribute</span> 
+            <span class="logic">some</span> 
+            <a href="#Region"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region">region</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+      </dl>
+   </div>
+   <div class="entity" id="RegionDataSet">
+      <h3>region data set<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet</p>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet">spatial data set</span> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement">has element</span> 
+            <span class="logic">only</span> 
+            <a href="#RegionData"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData">region data</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>is disjoint with</dt>
+         <dd>
+            <a href="#LineDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet">line data set</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Tessellation">
+      <h3>tessellation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation</p>
+      <div class="comment">
+         <span class="markdown">A region data set where spatial regions are tessellated (jointly covering and mutually non-overlapping) within a spatial extent</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#RegionDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet">region data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Raster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">raster</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#VectorTessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation">vector tessellation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TessellationA">
+      <h3>tessellation a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA</p>
+      <div class="comment">
+         <span class="markdown">An attribute of a tesselation data set</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#Coverage"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage">coverage</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#Lattice"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice">lattice</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Track">
+      <h3>track<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track</p>
+      <div class="comment">
+         <span class="markdown">A type for a spatial track. A spatial track is a vector representation of "fix" events of some moving object. For example, a GPS track of points of a person moving.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EventVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector">event vector</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="TrackDS">
+      <h3>track d s<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS</p>
+      <div class="comment">
+         <span class="markdown">A dataset representing tracks, i.e. point wise events (fixes) of the trajectory of some objects.</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#EventDS"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS">event d s</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointDataSet"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet">point data set</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="Vector">
+      <h3>vector<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector</p>
+      <div class="comment">
+         <span class="markdown">Vector data sets are spatial data sets that are not raster</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet">spatial data set</span> 
+            <span class="logic">and</span> (<span class="logic">not</span> (<a href="#Raster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster">raster</a>
+            <sup class="type-c" title="class">c</sup>))</dd>
+      </dl>
+   </div>
+   <div class="entity" id="VectorA">
+      <h3>vector a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA</p>
+      <div class="comment">
+         <span class="markdown">Attribute of some vector data set</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> (<span class="dotted"
+                  title="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet">of data set</span> 
+            <span class="logic">some</span> 
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup>)</dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has sub-classes</dt>
+         <dd>
+            <a href="#EventVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector">event vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ExistenceVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector">existence vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#FieldVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector">field vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#LineA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA">line a</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#ObjectVector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector">object vector</a>
+            <sup class="type-c" title="class">c</sup>, <a href="#PointA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA">point a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VectorRegionA">
+      <h3>vector region a<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA</p>
+      <div class="comment">
+         <span class="markdown">An attribute of a region vector data set</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#RegionA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA">region a</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#VectorA"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA">vector a</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Attribute"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute">attribute</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="VectorTessellation">
+      <h3>vector tessellation<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation</p>
+      <div class="comment">
+         <span class="markdown">This is a vector data set which is tessellated (and no raster)</span>
+      </div>
+      <dl class="description">
+         <dt>is equivalent to</dt>
+         <dd>
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup> 
+            <span class="logic">and</span> 
+            <a href="#Vector"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector">vector</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#Tessellation"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation">tessellation</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+   <div class="entity" id="ZeroExistenceRaster">
+      <h3>zero existence raster<sup class="type-c" title="class">c</sup>
+         <span class="backlink"> back to <a href="#toc">ToC</a> or <a href="#classes">Class ToC</a>
+         </span>
+      </h3>
+      <p>
+         <strong>IRI:</strong> http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster</p>
+      <div class="comment">
+         <span class="markdown">A raster dataset where 0 is interpreted as boolean "false"</span>
+      </div>
+      <dl class="description">
+         <dt>has super-classes</dt>
+         <dd>
+            <a href="#ExistenceRaster"
+               title="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster">existence raster</a>
+            <sup class="type-c" title="class">c</sup>
+         </dd>
+      </dl>
+   </div>
+</div><div id="legend">
+<h2>Legend <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<div   class="entity">
+<sup class="type-c" title="Classes">c</sup>: Classes <br/>
+<sup class="type-op" title="Object Properties">op</sup>: Object Properties <br/>
+<sup class="type-dp" title="Data Properties">dp</sup>: Data Properties <br/>
+<sup class="type-ni" title="Named Individuals">ni</sup>: Named Individuals
+</div>
+</div>
+</div>
+    
+
+<!--REFERENCES SECTION-->
+  <div id="references">
+<h2 id="ref" class="list">References <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
+<span class="markdown">
+Add your references here. It is recommended to have them as a list.</span>
+
+</div>
 <div id="acknowledgements">
 <h2 id="ack" class="list">Acknowledgements <span class="backlink"> back to <a href="#toc">ToC</a></span></h2>
 <p>
