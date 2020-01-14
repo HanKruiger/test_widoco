@@ -35,6 +35,52 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"/>
+        <rdfs:comment xml:lang="en">Dataset of amounts of objects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"/>
+        <rdfs:comment xml:lang="en">A raster data set where each cell represents an amount of objects</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"/>
+        <rdfs:comment xml:lang="en">A dataset where each geometry denotes an amount of objects</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute -->
 
 
@@ -85,6 +131,26 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS"/>
+        <rdfs:comment xml:lang="en">A dataset representing a field using contours, which denote the boundaries of value intervals. For example, a terrain contour map.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"/>
+        <rdfs:comment xml:lang="en">A data set which represents a core concept of spatial information. The attributes of this dataset are assumed to be of corresponding types.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA -->
 
 
@@ -116,10 +182,44 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+        <rdfs:comment xml:lang="en">A dataset representing a field using (possibly irregular) patches of homogeneous values. For example, a landuse map or a soil map.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"/>
+        <rdfs:comment xml:lang="en">A spatial dataset representing events</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ -->
 
 
     <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"/>
+                <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"/>
         <rdfs:comment xml:lang="en">This attribute represents a quality of an event (core concept). For example, the duration.</rdfs:comment>
     </owl:Class>
@@ -199,10 +299,26 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"/>
+        <rdfs:comment xml:lang="en">A spatial dataset representing a field</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ -->
 
 
     <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"/>
+                <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"/>
         <rdfs:comment xml:lang="en">An attribute which represents the quality of a field (core concept). This implies that the spatial data items in this data set are self-similar (their parts have the same attribute)</rdfs:comment>
     </owl:Class>
@@ -226,6 +342,24 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA"/>
         <rdfs:comment xml:lang="en">Field rasters are raster representations of continuous fields. For example, raster layers representing a terrain height (DTM).</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+        <rdfs:comment xml:lang="en">A dataset representing a field by homogeneous values using raster cells</rdfs:comment>
     </owl:Class>
     
 
@@ -278,6 +412,24 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA"/>
         <rdfs:comment xml:lang="en">A lattice is a spatial tessellation that represents objects and their qualities. For example, a set of municipalities with average income.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS"/>
+        <rdfs:comment xml:lang="en">A dataset of objects which tesselate space and contain statistical summaries. For example, the municipalities of the Netherlands</rdfs:comment>
     </owl:Class>
     
 
@@ -376,12 +528,76 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+        <rdfs:comment xml:lang="en">A representation of a field as a line of homogeneous values</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"/>
+        <rdfs:comment xml:lang="en">A spatial dataset representing a spatial network. Note thate a network in the sense of a core concept is a quantified relation between objects. For example, the traffic flow between municipalities or between two intersections. Streets themselves can also be seen as objects if they do not encode such relations</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"/>
+                <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"/>
+        <rdfs:comment xml:lang="en">This attribute represents the quality of a network edge.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster"/>
+        <rdfs:comment xml:lang="en">A raster dataset where  NoData is interpreted as boolean &quot;false&quot;.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA -->
 
 
     <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA">
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"/>
         <rdfs:comment xml:lang="en">A spatial attribute on nominal scale level</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"/>
+        <rdfs:comment xml:lang="en">A spatial data set representing objects</rdfs:comment>
     </owl:Class>
     
 
@@ -434,6 +650,12 @@
 
 
     <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ">
+        <owl:equivalentClass>
+            <owl:Restriction>
+                <owl:onProperty rdf:resource="http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"/>
+                <owl:someValuesFrom rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS"/>
+            </owl:Restriction>
+        </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"/>
         <rdfs:comment xml:lang="en">An attribute that represents the quality of an object (core concept)</rdfs:comment>
     </owl:Class>
@@ -489,6 +711,24 @@
     <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA">
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA"/>
         <rdfs:comment xml:lang="en">A spatial attribute on ordinal scale level</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+        <rdfs:comment xml:lang="en">A dataset which represents a field in terms patches of homogeneous values. Not necessarily tessellated</rdfs:comment>
     </owl:Class>
     
 
@@ -582,6 +822,24 @@
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector"/>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA"/>
         <rdfs:comment xml:lang="en">Point measures are point-like representations of fields. For example, point data sets denoting the locations of measured temperature values.</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"/>
+        <rdfs:comment xml:lang="en">A dataset representing a field in terms of point-wise measures. For example, temperature sensor measurements.</rdfs:comment>
     </owl:Class>
     
 
@@ -737,6 +995,17 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS"/>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"/>
+        <rdfs:comment xml:lang="en">A dataset representing tracks, i.e. point wise events (fixes) of the trajectory of some objects.</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector -->
 
 
@@ -777,6 +1046,24 @@
     
 
 
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA">
+        <owl:equivalentClass>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA"/>
+                    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </owl:equivalentClass>
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"/>
+        <rdfs:comment xml:lang="en">An attribute of a region vector data set</rdfs:comment>
+    </owl:Class>
+    
+
+
     <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation -->
 
 
@@ -791,6 +1078,16 @@
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"/>
         <rdfs:comment xml:lang="en">This is a vector data set which is tessellated (and no raster)</rdfs:comment>
+    </owl:Class>
+    
+
+
+    <!-- http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster -->
+
+
+    <owl:Class rdf:about="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster">
+        <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster"/>
+        <rdfs:comment xml:lang="en">A raster dataset where 0 is interpreted as boolean &quot;false&quot;</rdfs:comment>
     </owl:Class>
     
 
@@ -812,10 +1109,28 @@
         <rdfs:subClassOf rdf:resource="http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA"/>
         <rdfs:comment xml:lang="en">Intensive region attribute</rdfs:comment>
     </owl:Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotations
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#measureConnect">
+        <rdfs:comment>ofDataSet o hasElement o hasMeasure o valueOf</rdfs:comment>
+    </rdf:Description>
+    <rdf:Description rdf:about="http://geographicknowledge.de/vocab/AnalysisData.rdf#supportConnect">
+        <rdfs:comment>ofDataSet o hasElement o hasSupport o valueOf</rdfs:comment>
+    </rdf:Description>
 </rdf:RDF>
 
 
 
-<!-- Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/ -->
+<!-- Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/ -->
 
 

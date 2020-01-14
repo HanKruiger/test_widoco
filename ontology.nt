@@ -14,6 +14,39 @@
 # http://geographicknowledge.de/vocab/AnalysisData.rdf#Attribute
 <http://geographicknowledge.de/vocab/AnalysisData.rdf#Attribute> <http://www.w3.org/2002/07/owl#equivalentClass> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> <http://www.w3.org/2000/01/rdf-schema#comment> "Dataset of amounts of objects"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
+_:genid1 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid3 .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> .
+_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
+_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A raster data set where each cell represents an amount of objects"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid4 .
+_:genid4 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid6 .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> .
+_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid5 .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset where each geometry denotes an amount of objects"@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ValueList> .
@@ -26,18 +59,18 @@
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid1 .
-_:genid1 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid1 <http://www.w3.org/2002/07/owl#unionOf> _:genid4 .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> .
-_:genid4 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid3 .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> .
-_:genid3 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid2 .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> .
-_:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid7 .
+_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid7 <http://www.w3.org/2002/07/owl#unionOf> _:genid10 .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> .
+_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid9 .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> .
+_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid8 .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> .
+_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BoundedPhen> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a spatial attribute which denotes a bounded phenomenon. Can be either a object vector or an existence raster"@en .
 # 
@@ -47,6 +80,16 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour> <http://www.w3.org/2000/01/rdf-schema#comment> "Contour layers are coverages that denote intervals of the reprepresented continuous field. For example, temperature intervals, represented as regions bounded by isolines of a temperature field."@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset representing a field using contours, which denote the boundaries of value intervals. For example, a terrain contour map."@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> <http://www.w3.org/2000/01/rdf-schema#comment> "A data set which represents a core concept of spatial information. The attributes of this dataset are assumed to be of corresponding types."@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA> .
@@ -54,119 +97,165 @@ _:genid2 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/19
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid5 .
-_:genid5 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid8 .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
-_:genid8 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid6 .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid7 .
-_:genid7 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid7 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid7 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
-_:genid6 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid5 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid11 .
+_:genid11 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid14 .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
+_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid12 .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid13 .
+_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid13 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid13 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
+_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage> <http://www.w3.org/2000/01/rdf-schema#comment> "Coverages are tessellated layers that represent a continuous field. For example, landuse polygons."@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid15 .
+_:genid15 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid17 .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid16 .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
+_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset representing a field using (possibly irregular) patches of homogeneous values. For example, a landuse map or a soil map."@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial dataset representing events"@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid18 .
+_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid18 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid18 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ> <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute represents a quality of an event (core concept). For example, the duration."@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid9 .
-_:genid9 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid12 .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ> .
-_:genid12 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid10 .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid11 .
-_:genid11 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid11 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid11 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid10 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid9 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
+_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid22 .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ> .
+_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid21 .
+_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid21 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid21 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector> <http://www.w3.org/2000/01/rdf-schema#comment> "Events represented in terms of an attribute of a vector data set. For example, the magnitude of earthquakes represented as an attribute of a point data set."@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid13 .
-_:genid13 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid15 .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA> .
-_:genid15 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid14 .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> .
-_:genid14 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid13 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid23 .
+_:genid23 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA> .
+_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid24 .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> .
+_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> <http://www.w3.org/2000/01/rdf-schema#comment> "Existence rasters are rasters representing boolean fields (fields denoting whether something is present at a cell location or not)."@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid16 .
-_:genid16 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid18 .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA> .
-_:genid18 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid17 .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> .
-_:genid17 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid16 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
+_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid28 .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA> .
+_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> .
+_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector> <http://www.w3.org/2000/01/rdf-schema#comment> "A vector layer attribute that satisfies a boolean expression and thus denotes the 'existence' of some attribute encoded phenomenon across space. Example is a layer of polygons of ''forest'' landuse or a layer of \"parks\"."@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid19 .
-_:genid19 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid21 .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> .
-_:genid21 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid20 .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA> .
-_:genid20 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid19 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid29 .
+_:genid29 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid31 .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> .
+_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid30 .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA> .
+_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice> <http://www.w3.org/2000/01/rdf-schema#comment> "This type of lattice has an extensive attribute. For example, a spatial dataset about the population number of municipalities"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial dataset representing a field"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid32 .
+_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute which represents the quality of a field (core concept). This implies that the spatial data items in this data set are self-similar (their parts have the same attribute)"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid22 .
-_:genid22 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid25 .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
-_:genid25 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid23 .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid24 .
-_:genid24 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid24 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid24 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
-_:genid23 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid22 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid33 .
+_:genid33 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid36 .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
+_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid34 .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid35 .
+_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid35 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid35 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
+_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster> <http://www.w3.org/2000/01/rdf-schema#comment> "Field rasters are raster representations of continuous fields. For example, raster layers representing a terrain height (DTM)."@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid37 .
+_:genid37 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid39 .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid38 .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
+_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset representing a field by homogeneous values using raster cells"@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid26 .
-_:genid26 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid29 .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
-_:genid29 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid27 .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid28 .
-_:genid28 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid28 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid28 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid27 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid40 .
+_:genid40 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid43 .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
+_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid41 .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid42 .
+_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid42 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid42 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> <http://www.w3.org/2000/01/rdf-schema#comment> "A vector representation of a field. Can be a point or line measure, or a coverage"@en .
 # 
@@ -177,20 +266,34 @@ _:genid26 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid30 .
-_:genid30 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid33 .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
-_:genid33 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid31 .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid32 .
-_:genid32 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid32 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid32 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
-_:genid31 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid44 .
+_:genid44 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid47 .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
+_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid45 .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid46 .
+_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid46 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid46 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
+_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice> <http://www.w3.org/2000/01/rdf-schema#comment> "A lattice is a spatial tessellation that represents objects and their qualities. For example, a set of municipalities with average income."@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid48 .
+_:genid48 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid50 .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS> .
+_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid49 .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
+_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset of objects which tesselate space and contain statistical summaries. For example, the municipalities of the Netherlands"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -199,149 +302,191 @@ _:genid30 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid34 .
-_:genid34 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid37 .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
-_:genid37 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid35 .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid36 .
-_:genid36 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid36 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid36 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
-_:genid35 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid34 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid51 .
+_:genid51 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid54 .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid52 .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid53 .
+_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid53 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid53 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
+_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute of some Line data set"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid38 .
-_:genid38 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid41 .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData> .
-_:genid41 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid39 .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid40 .
-_:genid40 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid40 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute> .
-_:genid40 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line> .
-_:genid39 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid38 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid55 .
+_:genid55 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid58 .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData> .
+_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid56 .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid57 .
+_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid57 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute> .
+_:genid57 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line> .
+_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid42 .
-_:genid42 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid45 .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid45 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid43 .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid44 .
-_:genid44 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid44 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement> .
-_:genid44 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData> .
-_:genid43 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid42 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid59 .
+_:genid59 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid62 .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid60 .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid61 .
+_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid61 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement> .
+_:genid61 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData> .
+_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> <http://www.w3.org/2002/07/owl#disjointWith> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> <http://www.w3.org/2002/07/owl#disjointWith> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid46 .
-_:genid46 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid49 .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
-_:genid49 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid47 .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid48 .
-_:genid48 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid48 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid48 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
-_:genid47 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid46 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid63 .
+_:genid63 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid66 .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
+_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid64 .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid65 .
+_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid65 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid65 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
+_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures> <http://www.w3.org/2000/01/rdf-schema#comment> "Linear representations of fields. Examples are isoline maps"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid67 .
+_:genid67 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid69 .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid68 .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
+_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A representation of a field as a line of homogeneous values"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial dataset representing a spatial network. Note thate a network in the sense of a core concept is a quantified relation between objects. For example, the traffic flow between municipalities or between two intersections. Streets themselves can also be seen as objects if they do not encode such relations"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid70 .
+_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid70 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid70 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ> <http://www.w3.org/2000/01/rdf-schema#comment> "This attribute represents the quality of a network edge."@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster> <http://www.w3.org/2000/01/rdf-schema#comment> "A raster dataset where  NoData is interpreted as boolean \"false\"."@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial attribute on nominal scale level"@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial data set representing objects"@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid50 .
-_:genid50 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid53 .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
-_:genid53 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid51 .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid52 .
-_:genid52 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid52 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid52 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
-_:genid51 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid50 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid71 .
+_:genid71 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid74 .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
+_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid72 .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid73 .
+_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid73 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid73 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet> .
+_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute of an object line dataset"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid54 .
-_:genid54 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid57 .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
-_:genid57 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid55 .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid56 .
-_:genid56 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid56 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid56 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
-_:genid55 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid54 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid75 .
+_:genid75 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid78 .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
+_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid76 .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid77 .
+_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid77 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid77 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
+_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute of an object point dataset"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid79 .
+_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid79 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid79 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute that represents the quality of an object (core concept)"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid58 .
-_:genid58 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid61 .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
-_:genid61 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid59 .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid60 .
-_:genid60 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid60 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid60 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
-_:genid59 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid58 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid80 .
+_:genid80 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid83 .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
+_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid81 .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid82 .
+_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid82 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid82 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
+_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid62 .
-_:genid62 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid65 .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
-_:genid65 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid63 .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid64 .
-_:genid64 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid64 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid64 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid63 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid84 .
+_:genid84 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid87 .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ> .
+_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid85 .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid86 .
+_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid86 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid86 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector> <http://www.w3.org/2000/01/rdf-schema#comment> "Object vectors are vector representation of a set of objecs and their quality. For example, a point layer denoting points of Interest (POI) or buildings in a city together with their quality, e.g. the building height."@en .
@@ -351,6 +496,20 @@ _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA> <http://www.w3.org/2000/01/rdf-schema#comment> "A spatial attribute on ordinal scale level"@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid88 .
+_:genid88 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid90 .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid89 .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
+_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset which represents a field in terms patches of homogeneous values. Not necessarily tessellated"@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/AnalysisData.rdf#Spatial> .
@@ -358,70 +517,84 @@ _:genid62 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid66 .
-_:genid66 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid69 .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
-_:genid69 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid67 .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid68 .
-_:genid68 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid68 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid68 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
-_:genid67 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid66 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid91 .
+_:genid91 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid94 .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid92 .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid93 .
+_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid93 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid93 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
+_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute of some point data set"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid70 .
-_:genid70 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid73 .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData> .
-_:genid73 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid71 .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid72 .
-_:genid72 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid72 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute> .
-_:genid72 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point> .
-_:genid71 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid70 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid95 .
+_:genid95 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid98 .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData> .
+_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid96 .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid97 .
+_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid97 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute> .
+_:genid97 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point> .
+_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid74 .
-_:genid74 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid77 .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid77 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid75 .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid76 .
-_:genid76 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid76 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement> .
-_:genid76 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData> .
-_:genid75 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid74 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid99 .
+_:genid99 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid102 .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid100 .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid101 .
+_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid101 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement> .
+_:genid101 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData> .
+_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> <http://www.w3.org/2002/07/owl#disjointWith> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid78 .
-_:genid78 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid81 .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
-_:genid81 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid79 .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid80 .
-_:genid80 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid80 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid80 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
-_:genid79 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid103 .
+_:genid103 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid106 .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ> .
+_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid104 .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid105 .
+_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid105 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid105 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
+_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures> <http://www.w3.org/2000/01/rdf-schema#comment> "Point measures are point-like representations of fields. For example, point data sets denoting the locations of measured temperature values."@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid107 .
+_:genid107 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid109 .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid108 .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
+_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset representing a field in terms of point-wise measures. For example, temperature sensor measurements."@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -430,18 +603,18 @@ _:genid78 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid82 .
-_:genid82 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid85 .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
-_:genid85 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid83 .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid84 .
-_:genid84 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid84 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid84 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
-_:genid83 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid110 .
+_:genid110 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid113 .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+_:genid113 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid112 .
+_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid112 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid112 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
+_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute of some Raster"@en .
 # 
@@ -457,50 +630,50 @@ _:genid82 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid86 .
-_:genid86 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid89 .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
-_:genid89 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid87 .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid88 .
-_:genid88 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid88 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid88 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
-_:genid87 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid86 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid114 .
+_:genid114 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid117 .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+_:genid117 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid115 .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid116 .
+_:genid116 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid116 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid116 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> .
+_:genid115 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid114 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> <http://www.w3.org/2000/01/rdf-schema#comment> "Atrribute of some region data sets"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid90 .
-_:genid90 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid93 .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData> .
-_:genid93 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid91 .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid92 .
-_:genid92 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid92 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute> .
-_:genid92 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region> .
-_:genid91 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid90 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid118 .
+_:genid118 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid121 .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData> .
+_:genid121 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid119 .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid120 .
+_:genid120 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid120 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute> .
+_:genid120 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region> .
+_:genid119 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid118 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid94 .
-_:genid94 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid97 .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet> .
-_:genid97 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid95 .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid96 .
-_:genid96 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid96 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement> .
-_:genid96 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData> .
-_:genid95 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid122 .
+_:genid122 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid125 .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet> .
+_:genid125 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid123 .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid124 .
+_:genid124 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid124 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement> .
+_:genid124 <http://www.w3.org/2002/07/owl#allValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData> .
+_:genid123 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid122 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -509,18 +682,18 @@ _:genid94 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid98 .
-_:genid98 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid101 .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
-_:genid101 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid99 .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid100 .
-_:genid100 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid100 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid100 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
-_:genid99 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid126 .
+_:genid126 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid129 .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+_:genid129 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid127 .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid128 .
+_:genid128 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid128 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid128 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
+_:genid127 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid126 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute of a tesselation data set"@en .
 # 
@@ -529,51 +702,76 @@ _:genid98 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track> <http://www.w3.org/2000/01/rdf-schema#comment> "A type for a spatial track. A spatial track is a vector representation of \"fix\" events of some moving object. For example, a GPS track of points of a person moving."@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS> <http://www.w3.org/2000/01/rdf-schema#comment> "A dataset representing tracks, i.e. point wise events (fixes) of the trajectory of some objects."@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid102 .
-_:genid102 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid105 .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet> .
-_:genid105 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid103 .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid104 .
-_:genid104 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-_:genid104 <http://www.w3.org/2002/07/owl#complementOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
-_:genid103 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid102 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid130 .
+_:genid130 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid133 .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet> .
+_:genid133 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid131 .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid132 .
+_:genid132 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+_:genid132 <http://www.w3.org/2002/07/owl#complementOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster> .
+_:genid131 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid130 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> <http://www.w3.org/2000/01/rdf-schema#comment> "Vector data sets are spatial data sets that are not raster"@en .
 # 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid106 .
-_:genid106 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid109 .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
-_:genid109 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid107 .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid108 .
-_:genid108 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
-_:genid108 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
-_:genid108 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid107 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid106 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid134 .
+_:genid134 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid137 .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+_:genid137 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid135 .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> _:genid136 .
+_:genid136 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Restriction> .
+_:genid136 <http://www.w3.org/2002/07/owl#onProperty> <http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet> .
+_:genid136 <http://www.w3.org/2002/07/owl#someValuesFrom> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid135 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid134 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> <http://www.w3.org/2000/01/rdf-schema#comment> "Attribute of some vector data set"@en .
 # 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid138 .
+_:genid138 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid140 .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA> .
+_:genid140 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid139 .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA> .
+_:genid139 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid138 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA> <http://www.w3.org/2000/01/rdf-schema#comment> "An attribute of a region vector data set"@en .
+# 
 # http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
-<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid110 .
-_:genid110 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid112 .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
-_:genid112 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid111 .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
-_:genid111 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
-_:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation> <http://www.w3.org/2002/07/owl#equivalentClass> _:genid141 .
+_:genid141 <http://www.w3.org/2002/07/owl#intersectionOf> _:genid143 .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
+_:genid143 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> _:genid142 .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/1999/02/22-rdf-syntax-ns#List> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#first> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector> .
+_:genid142 <http://www.w3.org/1999/02/22-rdf-syntax-ns#rest> <http://www.w3.org/1999/02/22-rdf-syntax-ns#nil> .
+_:genid141 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation> .
 <http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation> <http://www.w3.org/2000/01/rdf-schema#comment> "This is a vector data set which is tessellated (and no raster)"@en .
+# 
+# http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster> .
+<http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster> <http://www.w3.org/2000/01/rdf-schema#comment> "A raster dataset where 0 is interpreted as boolean \"false\""@en .
 # 
 # http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA
 <http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2002/07/owl#Class> .
@@ -585,4 +783,17 @@ _:genid110 <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/
 <http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA> <http://www.w3.org/2000/01/rdf-schema#subClassOf> <http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA> .
 <http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#IRA> <http://www.w3.org/2000/01/rdf-schema#comment> "Intensive region attribute"@en .
 # 
-# Generated by the OWL API (version 5.1.9) https://github.com/owlcs/owlapi/
+# 
+# 
+# #################################################################
+# #
+# #    Annotations
+# #
+# #################################################################
+# 
+# 
+<http://geographicknowledge.de/vocab/AnalysisData.rdf#measureConnect> <http://www.w3.org/2000/01/rdf-schema#comment> "ofDataSet o hasElement o hasMeasure o valueOf" .
+# 
+<http://geographicknowledge.de/vocab/AnalysisData.rdf#supportConnect> <http://www.w3.org/2000/01/rdf-schema#comment> "ofDataSet o hasElement o hasSupport o valueOf" .
+# 
+# Generated by the OWL API (version 5.1.11) https://github.com/owlcs/owlapi/

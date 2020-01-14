@@ -1,6 +1,473 @@
 [ {
   "@id" : "_:genid1",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid101",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"
+  } ]
+}, {
+  "@id" : "_:genid103",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
+    }, {
+      "@id" : "_:genid105"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid105",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"
+  } ]
+}, {
+  "@id" : "_:genid107",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid11",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
+    }, {
+      "@id" : "_:genid13"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid110",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+    }, {
+      "@id" : "_:genid112"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid112",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
+  } ]
+}, {
+  "@id" : "_:genid114",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+    }, {
+      "@id" : "_:genid116"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid116",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"
+  } ]
+}, {
+  "@id" : "_:genid118",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"
+    }, {
+      "@id" : "_:genid120"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid120",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region"
+  } ]
+}, {
+  "@id" : "_:genid122",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"
+    }, {
+      "@id" : "_:genid124"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid124",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"
+  } ]
+}, {
+  "@id" : "_:genid126",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+    }, {
+      "@id" : "_:genid128"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid128",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+  } ]
+}, {
+  "@id" : "_:genid13",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+  } ]
+}, {
+  "@id" : "_:genid130",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"
+    }, {
+      "@id" : "_:genid132"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid132",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#complementOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
+  } ]
+}, {
+  "@id" : "_:genid134",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+    }, {
+      "@id" : "_:genid136"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid136",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
+  } ]
+}, {
+  "@id" : "_:genid138",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid141",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid15",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid18",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS"
+  } ]
+}, {
+  "@id" : "_:genid19",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ"
+    }, {
+      "@id" : "_:genid21"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid21",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
+  } ]
+}, {
+  "@id" : "_:genid23",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid26",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid29",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid32",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+  } ]
+}, {
+  "@id" : "_:genid33",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
+    }, {
+      "@id" : "_:genid35"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid35",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
+  } ]
+}, {
+  "@id" : "_:genid37",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid4",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid40",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
+    }, {
+      "@id" : "_:genid42"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid42",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
+  } ]
+}, {
+  "@id" : "_:genid44",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ"
+    }, {
+      "@id" : "_:genid46"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid46",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+  } ]
+}, {
+  "@id" : "_:genid48",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid51",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+    }, {
+      "@id" : "_:genid53"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid53",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"
+  } ]
+}, {
+  "@id" : "_:genid55",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"
+    }, {
+      "@id" : "_:genid57"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid57",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line"
+  } ]
+}, {
+  "@id" : "_:genid59",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
+    }, {
+      "@id" : "_:genid61"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid61",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData"
+  } ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"
+  } ]
+}, {
+  "@id" : "_:genid63",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
+    }, {
+      "@id" : "_:genid65"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid65",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"
+  } ]
+}, {
+  "@id" : "_:genid67",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid7",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#unionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster"
@@ -11,167 +478,26 @@
     } ]
   } ]
 }, {
-  "@id" : "_:genid100",
+  "@id" : "_:genid70",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
   } ],
   "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS"
   } ]
 }, {
-  "@id" : "_:genid102",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"
-    }, {
-      "@id" : "_:genid104"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid104",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#complementOf" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
-  } ]
-}, {
-  "@id" : "_:genid106",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
-    }, {
-      "@id" : "_:genid108"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid108",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
-  } ]
-}, {
-  "@id" : "_:genid11",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
-  } ]
-}, {
-  "@id" : "_:genid110",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
-    }, {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid13",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA"
-    }, {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid16",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#BooleanA"
-    }, {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid19",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Lattice"
-    }, {
-      "@id" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid22",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
-    }, {
-      "@id" : "_:genid24"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid24",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
-  } ]
-}, {
-  "@id" : "_:genid26",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
-    }, {
-      "@id" : "_:genid28"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid28",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
-  } ]
-}, {
-  "@id" : "_:genid30",
+  "@id" : "_:genid71",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ"
     }, {
-      "@id" : "_:genid32"
+      "@id" : "_:genid73"
     } ]
   } ]
 }, {
-  "@id" : "_:genid32",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
-  } ]
-}, {
-  "@id" : "_:genid34",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
-    }, {
-      "@id" : "_:genid36"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid36",
+  "@id" : "_:genid73",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
@@ -180,103 +506,17 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"
   } ]
 }, {
-  "@id" : "_:genid38",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"
-    }, {
-      "@id" : "_:genid40"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid40",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line"
-  } ]
-}, {
-  "@id" : "_:genid42",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
-    }, {
-      "@id" : "_:genid44"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid44",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"
-  } ]
-}, {
-  "@id" : "_:genid46",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
-    }, {
-      "@id" : "_:genid48"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid48",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"
-  } ]
-}, {
-  "@id" : "_:genid5",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
-    }, {
-      "@id" : "_:genid7"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid50",
+  "@id" : "_:genid75",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ"
     }, {
-      "@id" : "_:genid52"
+      "@id" : "_:genid77"
     } ]
   } ]
 }, {
-  "@id" : "_:genid52",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet"
-  } ]
-}, {
-  "@id" : "_:genid54",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ"
-    }, {
-      "@id" : "_:genid56"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid56",
+  "@id" : "_:genid77",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
@@ -285,17 +525,26 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"
   } ]
 }, {
-  "@id" : "_:genid58",
+  "@id" : "_:genid79",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
+  "http://www.w3.org/2002/07/owl#onProperty" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
+  } ],
+  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS"
+  } ]
+}, {
+  "@id" : "_:genid80",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ"
     }, {
-      "@id" : "_:genid60"
+      "@id" : "_:genid82"
     } ]
   } ]
 }, {
-  "@id" : "_:genid60",
+  "@id" : "_:genid82",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
@@ -304,17 +553,17 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"
   } ]
 }, {
-  "@id" : "_:genid62",
+  "@id" : "_:genid84",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ"
     }, {
-      "@id" : "_:genid64"
+      "@id" : "_:genid86"
     } ]
   } ]
 }, {
-  "@id" : "_:genid64",
+  "@id" : "_:genid86",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
@@ -323,17 +572,27 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
   } ]
 }, {
-  "@id" : "_:genid66",
+  "@id" : "_:genid88",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
+    "@list" : [ {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+    }, {
+      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"
+    } ]
+  } ]
+}, {
+  "@id" : "_:genid91",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
     }, {
-      "@id" : "_:genid68"
+      "@id" : "_:genid93"
     } ]
   } ]
 }, {
-  "@id" : "_:genid68",
+  "@id" : "_:genid93",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
@@ -342,26 +601,17 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"
   } ]
 }, {
-  "@id" : "_:genid7",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
-  } ]
-}, {
-  "@id" : "_:genid70",
+  "@id" : "_:genid95",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"
     }, {
-      "@id" : "_:genid72"
+      "@id" : "_:genid97"
     } ]
   } ]
 }, {
-  "@id" : "_:genid72",
+  "@id" : "_:genid97",
   "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
   "http://www.w3.org/2002/07/owl#onProperty" : [ {
     "@id" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"
@@ -370,143 +620,29 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point"
   } ]
 }, {
-  "@id" : "_:genid74",
+  "@id" : "_:genid99",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
     "@list" : [ {
       "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector"
     }, {
-      "@id" : "_:genid76"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid76",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"
-  } ]
-}, {
-  "@id" : "_:genid78",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ"
-    }, {
-      "@id" : "_:genid80"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid80",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"
-  } ]
-}, {
-  "@id" : "_:genid82",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
-    }, {
-      "@id" : "_:genid84"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid84",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster"
-  } ]
-}, {
-  "@id" : "_:genid86",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
-    }, {
-      "@id" : "_:genid88"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid88",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#ofDataSet"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"
-  } ]
-}, {
-  "@id" : "_:genid9",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ"
-    }, {
-      "@id" : "_:genid11"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid90",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialData"
-    }, {
-      "@id" : "_:genid92"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid92",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/GISConcepts.rdf#hasAttribute"
-  } ],
-  "http://www.w3.org/2002/07/owl#someValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Region"
-  } ]
-}, {
-  "@id" : "_:genid94",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"
-    }, {
-      "@id" : "_:genid96"
-    } ]
-  } ]
-}, {
-  "@id" : "_:genid96",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Restriction" ],
-  "http://www.w3.org/2002/07/owl#allValuesFrom" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData"
-  } ],
-  "http://www.w3.org/2002/07/owl#onProperty" : [ {
-    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#hasElement"
-  } ]
-}, {
-  "@id" : "_:genid98",
-  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
-  "http://www.w3.org/2002/07/owl#intersectionOf" : [ {
-    "@list" : [ {
-      "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
-    }, {
-      "@id" : "_:genid100"
+      "@id" : "_:genid101"
     } ]
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#Attribute",
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#measureConnect",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ofDataSet o hasElement o hasMeasure o valueOf"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#supportConnect",
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@value" : "ofDataSet o hasElement o hasSupport o valueOf"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf",
@@ -520,6 +656,42 @@
   } ],
   "http://www.w3.org/2002/07/owl#imports" : [ {
     "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "Dataset of amounts of objects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountRasterDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A raster data set where each cell represents an amount of objects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid1"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountVectorDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset where each geometry denotes an amount of objects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#AmountDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid4"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute",
@@ -552,7 +724,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid1"
+    "@id" : "_:genid7"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Contour",
@@ -565,6 +737,26 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Coverage"
   }, {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ContourDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset representing a field using contours, which denote the boundaries of value intervals. For example, a terrain contour map."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A data set which represents a core concept of spatial information. The attributes of this dataset are assumed to be of corresponding types."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/AnalysisData.rdf#SpatialDataSet"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CountA",
@@ -587,7 +779,30 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid5"
+    "@id" : "_:genid11"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoverageDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset representing a field using (possibly irregular) patches of homogeneous values. For example, a landuse map or a soil map."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid15"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A spatial dataset representing events"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventQ",
@@ -598,6 +813,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid18"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector",
@@ -610,7 +828,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid9"
+    "@id" : "_:genid19"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster",
@@ -620,7 +838,7 @@
     "@value" : "Existence rasters are rasters representing boolean fields (fields denoting whether something is present at a cell location or not)."
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid13"
+    "@id" : "_:genid23"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceVector",
@@ -633,7 +851,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid16"
+    "@id" : "_:genid26"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExtLattice",
@@ -643,7 +861,17 @@
     "@value" : "This type of lattice has an extensive attribute. For example, a spatial dataset about the population number of municipalities"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid19"
+    "@id" : "_:genid29"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A spatial dataset representing a field"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldQ",
@@ -654,6 +882,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid32"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRaster",
@@ -666,7 +897,20 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RasterA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid22"
+    "@id" : "_:genid33"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldRasterDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset representing a field by homogeneous values using raster cells"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid37"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldVector",
@@ -679,7 +923,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid26"
+    "@id" : "_:genid40"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#IntervalA",
@@ -702,7 +946,20 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#TessellationA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid30"
+    "@id" : "_:genid44"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LatticeDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset of objects which tesselate space and contain statistical summaries. For example, the municipalities of the Netherlands"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid48"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Line",
@@ -727,13 +984,13 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid34"
+    "@id" : "_:genid51"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid38"
+    "@id" : "_:genid55"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineDataSet",
@@ -744,7 +1001,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid42"
+    "@id" : "_:genid59"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasures",
@@ -759,7 +1016,53 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid46"
+    "@id" : "_:genid63"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#LineMeasuresDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A representation of a field as a line of homogeneous values"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid67"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A spatial dataset representing a spatial network. Note thate a network in the sense of a core concept is a quantified relation between objects. For example, the traffic flow between municipalities or between two intersections. Streets themselves can also be seen as objects if they do not encode such relations"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NetworkQ",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "This attribute represents the quality of a network edge."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid70"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NoDataExistenceRaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A raster dataset where  NoData is interpreted as boolean \"false\"."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA",
@@ -770,6 +1073,16 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A spatial data set representing objects"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#CoreConceptDataSet"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectLine",
@@ -784,7 +1097,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid50"
+    "@id" : "_:genid71"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectPoint",
@@ -799,7 +1112,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid54"
+    "@id" : "_:genid75"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectQ",
@@ -810,6 +1123,9 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid79"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectRegion",
@@ -820,7 +1136,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid58"
+    "@id" : "_:genid80"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ObjectVector",
@@ -835,7 +1151,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid62"
+    "@id" : "_:genid84"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#OrdinalA",
@@ -846,6 +1162,19 @@
   } ],
   "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#NominalA"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PatchDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset which represents a field in terms patches of homogeneous values. Not necessarily tessellated"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid88"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Point",
@@ -870,13 +1199,13 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid66"
+    "@id" : "_:genid91"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid70"
+    "@id" : "_:genid95"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet",
@@ -885,7 +1214,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid74"
+    "@id" : "_:genid99"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasures",
@@ -900,7 +1229,20 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointA"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid78"
+    "@id" : "_:genid103"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointMeasuresDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset representing a field in terms of point-wise measures. For example, temperature sensor measurements."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#FieldDS"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid107"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Raster",
@@ -923,7 +1265,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid82"
+    "@id" : "_:genid110"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RatioA",
@@ -956,19 +1298,19 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid86"
+    "@id" : "_:genid114"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionData",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid90"
+    "@id" : "_:genid118"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#RegionDataSet",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid94"
+    "@id" : "_:genid122"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation",
@@ -991,7 +1333,7 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid98"
+    "@id" : "_:genid126"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Track",
@@ -1004,6 +1346,18 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventVector"
   } ]
 }, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#TrackDS",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A dataset representing tracks, i.e. point wise events (fixes) of the trajectory of some objects."
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#EventDS"
+  }, {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#PointDataSet"
+  } ]
+}, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Vector",
   "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
   "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
@@ -1011,7 +1365,7 @@
     "@value" : "Vector data sets are spatial data sets that are not raster"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid102"
+    "@id" : "_:genid130"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorA",
@@ -1024,7 +1378,20 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid106"
+    "@id" : "_:genid134"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorRegionA",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "An attribute of a region vector data set"
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Attribute"
+  } ],
+  "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
+    "@id" : "_:genid138"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#VectorTessellation",
@@ -1037,7 +1404,17 @@
     "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#Tessellation"
   } ],
   "http://www.w3.org/2002/07/owl#equivalentClass" : [ {
-    "@id" : "_:genid110"
+    "@id" : "_:genid141"
+  } ]
+}, {
+  "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ZeroExistenceRaster",
+  "@type" : [ "http://www.w3.org/2002/07/owl#Class" ],
+  "http://www.w3.org/2000/01/rdf-schema#comment" : [ {
+    "@language" : "en",
+    "@value" : "A raster dataset where 0 is interpreted as boolean \"false\""
+  } ],
+  "http://www.w3.org/2000/01/rdf-schema#subClassOf" : [ {
+    "@id" : "http://geographicknowledge.de/vocab/CoreConceptData.rdf#ExistenceRaster"
   } ]
 }, {
   "@id" : "http://geographicknowledge.de/vocab/ExtensiveMeasures.rdf#ERA",
